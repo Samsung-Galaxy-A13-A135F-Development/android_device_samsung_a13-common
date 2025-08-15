@@ -20,4 +20,22 @@ extern int __aeabi_idiv0(void) {
 extern int __aeabi_uidiv0(void) {
   return raise(SIGFPE);
 }
+extern "C" uint64_t __aeabi_uidiv(uint64_t numerator, uint64_t denominator) {
+    if (denominator == 0) {
+        return 0;
+    }
+    return numerator / denominator;
+}
+extern "C" int __aeabi_idiv(int numerator, int denominator) {
+    if (denominator == 0) return 0;
+    return numerator / denominator;
+}
+
+extern "C" uint64_t __aeabi_uidivmod(uint64_t numerator, uint64_t denominator) {
+    if (denominator == 0) return 0;
+    return numerator % denominator;
+}
+extern "C" int __srget(FILE *stream) {
+    return 0;
+}
 #endif
