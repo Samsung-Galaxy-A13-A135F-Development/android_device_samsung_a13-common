@@ -14,7 +14,15 @@ vendor/lib/libsecaudiocoreutils.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.exynos850.so
 vendor/lib/hw/audio.sec_primary.default.so
+vendor/lib/libaboxpcmdump.so
+vendor/lib/libdatamod.so
+vendor/lib/liblastaboxmsg.so
+vendor/lib/librecordalive.so
+vendor/lib/libsecaudioinfo.so
+vendor/lib/libspeakercalibration.so
+vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
+vendor/lib/vendor.samsung.hardware.audio@1.0.so
 
 # Audio Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/AP_AUDIO_SLSI.bin
@@ -37,6 +45,7 @@ vendor/lib64/libremosaic_wrapper.so
 
 # Camera - From Samsung package version A135FXXS7DXE2
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service
+vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc
 vendor/lib/libexynoscamera_plugin.so
 vendor/lib/libexynoscamera_plugin_utils.so
 vendor/lib/hw/camera.exynos850.so
@@ -60,14 +69,19 @@ vendor/etc/btcon.json
 
 # Camera dependencies - From Samsung package version A135FXXS7DXE2
 vendor/lib/libBeauty_v4.camera.samsung.so
+vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libDualCamBokehCapture.camera.samsung.so
+vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libexifa.camera.samsung.so
 vendor/lib/libexynoscamera_tdnr_plugin.so
 vendor/lib/libexynoscamera3.so
 vendor/lib/libFace_Landmark_API.camera.samsung.so
+vendor/lib/libhigh_dynamic_range_bokeh.so
 vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
+vendor/lib/libHprFace_GAE_api.camera.samsung.so
 vendor/lib/libLocalTM_capture_core.camera.samsung.so
 vendor/lib/libLocalTM_wrapper.camera.samsung.so
+vendor/lib/libmpbase.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so
@@ -76,6 +90,7 @@ vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 
 # Thermal - From Samsung package version A135FXXS7DXE2
 vendor/bin/hw/vendor.samsung.hardware.thermal-service
+vendor/lib/vendor.samsung.hardware.thermal-V1-ndk.so
 
 # Charger Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/mfc_fw.bin
@@ -94,10 +109,15 @@ vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
 
 # Biometrics - From Samsung package version A135FXXS7DXE2
-vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
-vendor/lib/vendor.samsung.hardware.biometrics.face-V3-ndk.so
+vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
+vendor/lib/libbauthserver.so
+vendor/lib/libbauthtzcommon.so
+vendor/lib/libegis_fp_normal_sensor_test.so
+vendor/lib/libgf_in_system_lib.so
+vendor/lib/libqfp_sensortest.so
+vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib/hw/fingerprint.default.so
 
 # Firmware
@@ -156,6 +176,8 @@ vendor/etc/gnss/deleteLogCommands
 vendor/etc/gnss/gps.debug.cfg
 
 # GPS - From Samsung package version A135FXXS7DXE2
+vendor/lib/vendor.samsung.hardware.gnss@2.0.so
+vendor/lib/vendor.samsung.hardware.gnss@2.1.so
 vendor/lib/hw/android.hardware.gnss@2.1-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.1-impl.so
 
@@ -165,10 +187,12 @@ vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendo
 vendor/lib64/hw/vulkan.mali.so
 
 # Graphics - From Samsung package version A135FXXS7DXE2
-vendor/bin/snap_utility_32
-vendor/etc/snap_gpu_kernel_32.bin
+vendor/bin/snap_utility_32;DISABLE_DEPS
+vendor/etc/snap_gpu_kernel_32.bin;DISABLE_DEPS
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/hwcomposer.exynos850.so
+vendor/lib/libExynosHWCService.so
+vendor/lib/libhdrwrapper.so
 vendor/lib/hw/vulkan.mali.so
 
 # Keymaster
@@ -195,6 +219,9 @@ vendor/etc/plmn_se13.bin
 vendor/lib64/libengmode_client.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libvkmanager_vendor.so
+
+# RIL - From Samsung package version A135FXXS7DXE2
+vendor/lib/libfloatingfeature.so
 
 ## RIL - from a14 - A145FXXS8CXJ2
 vendor/bin/hw/rild|006374bbdd818b1d6ee83617ddabbf4073974e0e
