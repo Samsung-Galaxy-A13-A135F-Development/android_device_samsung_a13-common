@@ -33,7 +33,7 @@ TARGET_2ND_CPU_VARIANT := generic
 
 ## Audio
 $(call soong_config_set,exynos_audio,PREDEFINED_LOW_CAPTURE_DURATION,20)
-$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/a21s-common:libaudioproxy)
+$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/a13-common:libaudioproxy)
 
 ## Boot Image
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -112,7 +112,7 @@ TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos850
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//device/samsung/a21s-common:libinit_exynos3830)
+$(call soong_config_set,libinit,vendor_init_lib,//device/samsung/a13-common:libinit_exynos3830)
 
 # A/B
 AB_OTA_UPDATER := false

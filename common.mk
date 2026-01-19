@@ -186,7 +186,7 @@ PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung
 
-$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/a21s-common:libskeymaster4device)
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/a13-common:libskeymaster4device)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
