@@ -29,7 +29,11 @@ PRODUCT_CHARACTERISTICS := phone
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@2.0-impl:32 \
+    android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio.effect@7.0-impl:32 \
+    android.hardware.audio@2.0-impl:32 \
+    android.hardware.audio@6.0-impl:32 \
     android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
@@ -38,6 +42,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.primary.universal3830
 
+# Soundtrigger
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.0-impl:32 \
 # Mixer
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/mixer/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
@@ -63,7 +70,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl:64 \
+    android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor:64
 
@@ -76,6 +83,24 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung:32 \
     libGrallocMapperCamera:32
 
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0.vendor:32 \
+    android.hardware.camera.device@1.0.vendor:32 \
+    android.hardware.camera.device@3.2.vendor:32 \
+    android.hardware.camera.device@3.3.vendor:32 \
+    android.hardware.camera.device@3.4.vendor:32 \
+    android.hardware.camera.device@3.5.vendor:32 \
+    android.hardware.camera.device@3.6.vendor:32 \
+    android.hardware.camera.provider@2.4.vendor:32 \
+    android.hardware.camera.provider@2.5.vendor:32 \
+    android.hardware.camera.provider@2.6.vendor:32 \
+    camera.device@1.0-impl:32 \
+    camera.device@3.2-impl:32 \
+    camera.device@3.3-impl:32 \
+    camera.device@3.4-impl:32 \
+    camera.device@3.5-impl:32 \
+    libcamera2ndk_vendor
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor
@@ -86,7 +111,9 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung:32
+    android.hardware.biometrics.fingerprint-service.samsung:32 \
+    android.hardware.biometrics.common-V3-ndk.vendor:32 \
+    android.hardware.biometrics.fingerprint@2.1.vendor:32
 
 # VIB
 PRODUCT_PACKAGES += \
@@ -97,6 +124,8 @@ PRODUCT_PACKAGES += \
     android.hardware.composer.hwc3-service.slsi \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.allocator@4.0-impl:32 \
+    android.hardware.graphics.mapper@4.0-impl:32 \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     gralloc.universal3830
 
@@ -105,6 +134,11 @@ PRODUCT_PACKAGES += \
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl:32 \
+
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -116,7 +150,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl:64 \
+    android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
 # Graphics
@@ -259,7 +293,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.samsung-multihal
+    android.hardware.sensors-service.samsung-multihal \
+    android.hardware.sensors@1.0-impl:32
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \

@@ -11,11 +11,6 @@ vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 
 # Audio - From Samsung package version A135FXXS7DXE2
-vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib/hw/android.hardware.audio@2.0-impl.so
-vendor/lib/hw/android.hardware.audio@6.0-impl.so
-vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.exynos850.so
 vendor/lib/hw/audio.sec_primary.default.so
@@ -33,9 +28,6 @@ vendor/firmware/dax_param.bin
 
 # Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
-
-# Bluetooth - From Samsung package version A135FXXS7DXE2
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
 
 # Camera
 vendor/lib/libremosaic_wrapper.so
@@ -67,23 +59,7 @@ vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/etc/btcon.json
 
 # Camera dependencies - From Samsung package version A135FXXS7DXE2
-vendor/lib/android.hardware.camera.common@1.0.so
-vendor/lib/android.hardware.camera.device@1.0.so
-vendor/lib/android.hardware.camera.device@3.2.so
-vendor/lib/android.hardware.camera.device@3.3.so
-vendor/lib/android.hardware.camera.device@3.4.so
-vendor/lib/android.hardware.camera.device@3.5.so
-vendor/lib/android.hardware.camera.device@3.6.so
-vendor/lib/android.hardware.camera.provider@2.4.so
-vendor/lib/android.hardware.camera.provider@2.5.so
-vendor/lib/android.hardware.camera.provider@2.6.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-impl.so
 vendor/lib/libBeauty_v4.camera.samsung.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libDualCamBokehCapture.camera.samsung.so
 vendor/lib/libexifa.camera.samsung.so
 vendor/lib/libexynoscamera_tdnr_plugin.so
@@ -120,9 +96,6 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 # Biometrics - From Samsung package version A135FXXS7DXE2
 vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
-vendor/lib/android.hardware.biometrics.common-V3-ndk.so
-vendor/lib/android.hardware.biometrics.face-V3-ndk.so
-vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
 vendor/lib/vendor.samsung.hardware.biometrics.face-V3-ndk.so
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 vendor/lib/hw/fingerprint.default.so
@@ -165,7 +138,6 @@ vendor/lib64/hw/gatekeeper.exynos850.so
 
 # Gatekeeper - From Samsung package version A135FXXS7DXE2
 vendor/lib/hw/gatekeeper.exynos850.so
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 
 # GPS
 vendor/bin/hw/gps.sh
@@ -195,9 +167,6 @@ vendor/lib64/hw/vulkan.mali.so
 # Graphics - From Samsung package version A135FXXS7DXE2
 vendor/bin/snap_utility_32
 vendor/etc/snap_gpu_kernel_32.bin
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
-vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/hwcomposer.exynos850.so
 vendor/lib/hw/vulkan.mali.so
@@ -298,8 +267,7 @@ vendor/lib/sensors.sensorhub.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.sensorhub.so
 
-# Sensors - From Samsung package version A135FXXS7DXE2 
-vendor/lib/hw/android.hardware.sensors@1.0-impl.so
+# Sensors - From Samsung package version A135FXXS7DXE2
 vendor/lib/hw/sensors.exynos850.so
 
 # Widevine
