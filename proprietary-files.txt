@@ -325,14 +325,6 @@ vendor/etc/wifi/mx140_wlan_t_sw.hcf
 vendor/etc/wifi/platform.txt
 vendor/etc/wifi/slsi_reg_database.bin
 
-# Wi-Fi overlays - From Samsung package version A135FXXS7DXE2
-vendor/overlay/ConnectivityOverlay/ConnectivityOverlay.apk
-vendor/overlay/SoftapOverlayWpa3/SoftapOverlayWpa3.apk
-
-# Tethering overlays - From Samsung package version A135FXXS7DXE2
-vendor/overlay/TetheringOverlay/TetheringOverlay.apk
-vendor/overlay/TetheringOverlay_Gsi/TetheringOverlay_Gsi.apk
-
 # Misc - From Samsung package version A135FXXS7DXE2
 vendor/lib/hw/local_time.default.so
 
