@@ -10,7 +10,18 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 
-# Audio Firmware
+# Audio - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
+vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
+vendor/lib/hw/android.hardware.audio@2.0-impl.so
+vendor/lib/hw/android.hardware.audio@6.0-impl.so
+vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
+vendor/lib/hw/audio.primary.default.so
+vendor/lib/hw/audio.primary.exynos850.so
+vendor/lib/hw/audio.sec_primary.default.so
+vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
+
+# Audio Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
@@ -23,18 +34,23 @@ vendor/firmware/dax_param.bin
 # Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
+# Bluetooth - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
+
 # Camera
-vendor/lib/hw/camera.exynos850.so
-vendor/lib/libexynoscamera_plugin.so
 vendor/lib/libremosaic_wrapper.so
 vendor/lib64/hw/camera.exynos850.so
 vendor/lib64/libexynoscamera_plugin.so
 vendor/lib64/libremosaic_wrapper.so
 
+# Camera - From Samsung package version A135FXXS7DXE2
+vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service
+vendor/lib/libexynoscamera_plugin.so
+vendor/lib/libexynoscamera_plugin_utils.so
+vendor/lib/hw/camera.exynos850.so
+
 # Camera dependencies
 vendor/lib/libSEF.quram.so
-vendor/lib/libexynoscamera3.so
-vendor/lib/libexynoscamera_tdnr_plugin.so
 vendor/lib/libmfb.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libuniapi.so
@@ -50,7 +66,42 @@ vendor/lib64/libuniplugin.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/etc/btcon.json
 
-# Charger Firmware
+# Camera dependencies - From Samsung package version A135FXXS7DXE2
+vendor/lib/android.hardware.camera.common@1.0.so
+vendor/lib/android.hardware.camera.device@1.0.so
+vendor/lib/android.hardware.camera.device@3.2.so
+vendor/lib/android.hardware.camera.device@3.3.so
+vendor/lib/android.hardware.camera.device@3.4.so
+vendor/lib/android.hardware.camera.device@3.5.so
+vendor/lib/android.hardware.camera.device@3.6.so
+vendor/lib/android.hardware.camera.provider@2.4.so
+vendor/lib/android.hardware.camera.provider@2.5.so
+vendor/lib/android.hardware.camera.provider@2.6.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/camera.device@3.5-impl.so
+vendor/lib/libBeauty_v4.camera.samsung.so
+vendor/lib/libcamera2ndk_vendor.so
+vendor/lib/libDualCamBokehCapture.camera.samsung.so
+vendor/lib/libexifa.camera.samsung.so
+vendor/lib/libexynoscamera_tdnr_plugin.so
+vendor/lib/libexynoscamera3.so
+vendor/lib/libFace_Landmark_API.camera.samsung.so
+vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
+vendor/lib/libLocalTM_capture_core.camera.samsung.so
+vendor/lib/libLocalTM_wrapper.camera.samsung.so
+vendor/lib/libOpenCv.camera.samsung.so
+vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
+vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so
+vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
+vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so
+
+# Thermal - From Samsung package version A135FXXS7DXE2
+vendor/bin/hw/vendor.samsung.hardware.thermal-service
+
+# Charger Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/mfc_fw.bin
 
 # Codecs
@@ -66,31 +117,55 @@ vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
 
+# Biometrics - From Samsung package version A135FXXS7DXE2
+vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
+vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
+vendor/lib/android.hardware.biometrics.common-V3-ndk.so
+vendor/lib/android.hardware.biometrics.face-V3-ndk.so
+vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
+vendor/lib/vendor.samsung.hardware.biometrics.face-V3-ndk.so
+vendor/lib/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
+vendor/lib/hw/fingerprint.default.so
+
 # Firmware
-vendor/firmware/MCD_NACHO_slog.bin
-vendor/firmware/abox_tplg.bin
-vendor/firmware/abox_tplg.conf
-vendor/firmware/dax_param.bin
-vendor/firmware/listenbackeffect.bin
-vendor/firmware/rxse.bin
-vendor/firmware/sb_others.bin
-vendor/firmware/setfile_gc02m1.bin
-vendor/firmware/setfile_gc02m1_macro.bin
 vendor/firmware/setfile_gm2.bin
 vendor/firmware/setfile_sr846.bin
-vendor/firmware/tdnr_GC02M1.json
 vendor/firmware/tdnr_S5KGM2.json
 vendor/firmware/tdnr_SR846.json
-vendor/firmware/txse1.bin
-vendor/firmware/txse2.bin
 vendor/firmware/setfile_4ha.bin
 vendor/firmware/setfile_hi1336.bin
 vendor/firmware/tdnr_HI1336.json
 vendor/firmware/tdnr_S5K4HA.json
 
+# Firmware - From Samsung package version A135FXXS7DXE2
+vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
+vendor/firmware/aw882xx_pid_2055a_acf.bin
+vendor/firmware/aw882xx_pid_2055b_acf.bin
+vendor/firmware/dual_cal_wide_sub.bin
+vendor/firmware/listenbackeffect.bin
+vendor/firmware/MCD_NACHO_slog.bin
+vendor/firmware/rxse.bin
+vendor/firmware/sb_others.bin
+vendor/firmware/setfile_gc02m1.bin
+vendor/firmware/setfile_gc02m1_macro.bin
+vendor/firmware/setfile_gc08a3.bin
+vendor/firmware/setfile_gc5035.bin
+vendor/firmware/setfile_jn1.bin
+vendor/firmware/tdnr_GC02M1.json
+vendor/firmware/tdnr_GC08A3.json
+vendor/firmware/tdnr_GC5035.json
+vendor/firmware/tdnr_S5KJN1.json
+vendor/firmware/txse1.bin
+vendor/firmware/txse2.bin
+vendor/firmware/nfc/libpn557_fw.so
+
 # Gatekeeper
-vendor/lib/hw/gatekeeper.exynos850.so
 vendor/lib64/hw/gatekeeper.exynos850.so
+
+# Gatekeeper - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/gatekeeper.exynos850.so
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 
 # GPS
 vendor/bin/hw/gps.sh
@@ -108,20 +183,35 @@ vendor/etc/gnss/ca.pem
 vendor/etc/gnss/deleteLogCommands
 vendor/etc/gnss/gps.debug.cfg
 
+# GPS - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/android.hardware.gnss@2.1-impl.so
+vendor/lib/hw/vendor.samsung.hardware.gnss@2.1-impl.so
+
 # Graphics
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal3830.so
-vendor/lib/hw/vulkan.mali.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal3830.so
 vendor/lib64/hw/vulkan.mali.so
+
+# Graphics - From Samsung package version A135FXXS7DXE2
+vendor/bin/snap_utility_32
+vendor/etc/snap_gpu_kernel_32.bin
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
+vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
+vendor/lib/hw/gralloc.default.so
+vendor/lib/hw/hwcomposer.exynos850.so
+vendor/lib/hw/vulkan.mali.so
 
 # Keymaster
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so
 
 # OMX Firmware
+vendor/etc/seccomp_policy/mediacodec.policy
+
+# OMX Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/is_lib.bin
 vendor/firmware/is_rta.bin
-vendor/etc/seccomp_policy/mediacodec.policy
 
 # RIL
 vendor/bin/cass
@@ -208,6 +298,10 @@ vendor/lib/sensors.sensorhub.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.sensorhub.so
 
+# Sensors - From Samsung package version A135FXXS7DXE2 
+vendor/lib/hw/android.hardware.sensors@1.0-impl.so
+vendor/lib/hw/sensors.exynos850.so
+
 # Widevine
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
@@ -230,6 +324,23 @@ vendor/etc/wifi/mx140_wlan_t.hcf
 vendor/etc/wifi/mx140_wlan_t_sw.hcf
 vendor/etc/wifi/platform.txt
 vendor/etc/wifi/slsi_reg_database.bin
+
+# Wi-Fi overlays - From Samsung package version A135FXXS7DXE2
+vendor/overlay/ConnectivityOverlay/ConnectivityOverlay.apk
+vendor/overlay/SoftapOverlayWpa3/SoftapOverlayWpa3.apk
+
+# Tethering overlays - From Samsung package version A135FXXS7DXE2
+vendor/overlay/TetheringOverlay/TetheringOverlay.apk
+vendor/overlay/TetheringOverlay_Gsi/TetheringOverlay_Gsi.apk
+
+# Misc - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/local_time.default.so
+
+# Power - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/power.default.so
+
+# Vibrator - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/vibrator.default.so
 
 # Swap file
 vendor/etc/fstab.ramplus

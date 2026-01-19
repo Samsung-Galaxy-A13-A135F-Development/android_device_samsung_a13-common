@@ -48,7 +48,8 @@
         "target_path": "hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
     },
     {
-        "repository": "android_kernel_samsung_exynos850",
+	"remote": "github"
+        "repository": "Samsung-Galaxy-A13-A135F-Development/android_kernel_samsung_exynos850",
         "target_path": "kernel/samsung/exynos850"
     }
 ]

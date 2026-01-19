@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/a21s-common
+COMMON_PATH := device/samsung/a13-common
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/a21s-common/a21s-common-vendor.mk)
+$(call inherit-product, vendor/samsung/a13-common/a13-common-vendor.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -73,8 +73,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.samsung \
-    libGrallocMapperCamera
+    android.hardware.camera.provider-service.samsung:32 \
+    libGrallocMapperCamera:32
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung
+    android.hardware.biometrics.fingerprint-service.samsung:32
 
 # VIB
 PRODUCT_PACKAGES += \

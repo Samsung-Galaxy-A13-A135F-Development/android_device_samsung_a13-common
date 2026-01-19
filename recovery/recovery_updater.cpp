@@ -31,10 +31,10 @@ Value* VerifyBootloader(const char* name, State* state,
   }
 
   char ninth_char = bootloader[8]; // index 8 = 9th character
-  if (ninth_char == 'C') {
+  if (ninth_char == '5') {
     return StringValue("1");
   } else {
-    return StringValue("0");
+    return StringValue("1");
   }
 }
 
