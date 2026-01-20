@@ -43,6 +43,10 @@ blob_fixups: blob_fixups_user_type = {
             '80 0E 40 F9 E1 03 16 AA 82 0C 80 52 08 00 80 D2'),
     'vendor/lib64/libcrypto-tm.so': blob_fixup()
         .replace_needed('libssl.so', 'libssl-tm.so'),
+    'vendor/lib/libsynaFpSensorTestNwd.so': blob_fixup()
+        .add_needed('libshim_idiv0.so'),
+    'vendor/lib/libaboxpcmdump.so': blob_fixup()
+        .add_needed('libshim_abox.so'),
     (
     'vendor/lib/libsensorlistener.so',
     'vendor/lib64/libsensorlistener.so',
