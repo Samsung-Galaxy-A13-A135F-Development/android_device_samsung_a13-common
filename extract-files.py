@@ -47,6 +47,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libshim_idiv0.so'),
     'vendor/lib/libaboxpcmdump.so': blob_fixup()
         .add_needed('libshim_abox.so'),
+    'vendor/lib/libexynoscamera3.so': blob_fixup()
+        .add_needed('libshim_camera.so'),
     (
     'vendor/lib/libsensorlistener.so',
     'vendor/lib64/libsensorlistener.so',
