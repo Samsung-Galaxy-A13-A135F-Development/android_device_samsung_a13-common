@@ -191,7 +191,7 @@ vendor/bin/snap_utility_32;DISABLE_DEPS
 vendor/etc/snap_gpu_kernel_32.bin;DISABLE_DEPS
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/hwcomposer.exynos850.so
-vendor/lib/libExynosHWCService.so
+vendor/lib/libExynosHWCService.so;DISABLE_CHECKELF
 vendor/lib/libhdrwrapper.so
 vendor/lib/hw/vulkan.mali.so
 
