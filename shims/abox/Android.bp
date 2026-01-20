@@ -15,5 +15,8 @@
 cc_library_shared {
     name: "libshim_abox",
     srcs: ["mixer.c"],
+    shared_libs: [
+        "liblog",
+    ],
     vendor: true,
 }
