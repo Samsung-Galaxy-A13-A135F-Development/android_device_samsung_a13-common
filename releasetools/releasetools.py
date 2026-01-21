@@ -42,7 +42,7 @@ def AddImage(info, basename, dest):
 def OTA_Assertions(info):
   cmd = (
       'assert(exynos850.verify_bootloader_min("") == "1" || '
-      'abort("ERROR: This build requires a bootloader with binary version C. Please update your firmware."););'
+      'abort("ERROR: This build requires a bootloader with binary version 5 minimum. Please update your firmware."););'
   )
   info.script.AppendExtra(cmd)
   return

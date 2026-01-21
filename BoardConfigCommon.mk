@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := device/samsung/a21s-common
+COMMON_PATH := device/samsung/a13-common
 
 ## Inherit proprietary vendor configuartion
-include vendor/samsung/a21s-common/BoardConfigVendor.mk
+include vendor/samsung/a13-common/BoardConfigVendor.mk
 
 ## Architecture
 TARGET_ARCH := arm64
@@ -33,7 +33,7 @@ TARGET_2ND_CPU_VARIANT := generic
 
 ## Audio
 $(call soong_config_set,exynos_audio,PREDEFINED_LOW_CAPTURE_DURATION,20)
-$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/a21s-common:libaudioproxy)
+$(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/a13-common:libaudioproxy)
 
 ## Boot Image
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -56,7 +56,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 ## Camera
-$(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
+$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
 
 # Camera
 SOONG_CONFIG_NAMESPACES += samsungCameraVars
@@ -67,7 +67,7 @@ SOONG_CONFIG_samsungCameraVars_extra_ids := 52,54
 
 ## Display
 BOARD_MINIMUM_DISPLAY_BRIGHTNESS := 1
-TARGET_SCREEN_DENSITY := 280
+TARGET_SCREEN_DENSITY := 400
 
 ## Dynamic Partitions
 BOARD_SUPER_PARTITION_SIZE := 5557452800
@@ -112,7 +112,7 @@ TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos850
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//device/samsung/a21s-common:libinit_exynos3830)
+$(call soong_config_set,libinit,vendor_init_lib,//device/samsung/a13-common:libinit_exynos3830)
 
 # A/B
 AB_OTA_UPDATER := false
