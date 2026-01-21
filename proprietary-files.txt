@@ -10,20 +10,6 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 
-# Audio - From Samsung package version A135FXXS7DXE2
-vendor/lib/hw/audio.primary.default.so
-vendor/lib/hw/audio.primary.exynos850.so
-vendor/lib/hw/audio.sec_primary.default.so
-vendor/lib/libaboxpcmdump.so
-vendor/lib/libdatamod.so
-vendor/lib/liblastaboxmsg.so
-vendor/lib/librecordalive.so
-vendor/lib/libsecaudioinfo.so
-vendor/lib/libspeakercalibration.so
-vendor/lib/lib_SamsungRec_07010.so
-vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
-vendor/lib/vendor.samsung.hardware.audio@1.0.so
-
 # Audio Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/APDV_AUDIO_SLSI.bin
@@ -87,10 +73,6 @@ vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so
-
-# Thermal - From Samsung package version A135FXXS7DXE2
-vendor/bin/hw/vendor.samsung.hardware.thermal-service
-vendor/lib/vendor.samsung.hardware.thermal-V1-ndk.so
 
 # Charger Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/mfc_fw.bin
@@ -178,8 +160,8 @@ vendor/etc/gnss/gps.debug.cfg
 # GPS - From Samsung package version A135FXXS7DXE2
 vendor/lib/vendor.samsung.hardware.gnss@2.0.so
 vendor/lib/vendor.samsung.hardware.gnss@2.1.so
-vendor/lib/hw/android.hardware.gnss@2.1-impl.so
-vendor/lib/hw/vendor.samsung.hardware.gnss@2.1-impl.so
+vendor/lib/hw/android.hardware.gnss@2.1-impl.so;FIX_SONAME
+vendor/lib/hw/vendor.samsung.hardware.gnss@2.1-impl.so;FIX_SONAME
 
 # Graphics
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal3830.so
