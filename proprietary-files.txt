@@ -93,6 +93,7 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 # Biometrics - From Samsung package version A135FXXS7DXE2
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
 vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
+vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
