@@ -17,7 +17,7 @@
 #define LOG_TAG "libshim_abox"
 #define LOG_NDEBUG 0
 
-#include <cutils/log.h>
+#include <android-base/logging.h>
 
 void direct_mixer_set_value(int arg0, int arg1)
 {
