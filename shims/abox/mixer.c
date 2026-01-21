@@ -21,7 +21,7 @@
 
 void direct_mixer_set_value(int arg0, int arg1)
 {
-    ALOGW("SHIM: hijacking %s!", __func__);
+    ALOGE("SHIM: hijacking %s!", __func__);
 
     /*
      * This function is supposed to invoke the `mixer_ctl_set_value`
