@@ -14,18 +14,13 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "libshim_abox"
-#define LOG_NDEBUG 0
-
-#include <android-base/logging.h>
-
 void direct_mixer_set_value(int arg0, int arg1)
 {
-    ALOGE("SHIM: hijacking %s!", __func__);
 
     /*
      * This function is supposed to invoke the `mixer_ctl_set_value`
      * function directly by some libraries.
      * But no libraries from AOSP call this function.
      */
+
 }
