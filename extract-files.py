@@ -44,6 +44,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libssl.so', 'libssl-tm.so'),
     'vendor/lib/libexynoscamera3.so': blob_fixup()
         .add_needed('libshim_camera.so'),
+    'vendor/lib/hw/camera.exynos850.so': blob_fixup()
+        .add_needed('libshim_exynoscam.so'),
     (
     'vendor/lib/libsensorlistener.so',
     'vendor/lib64/libsensorlistener.so',
