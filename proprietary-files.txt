@@ -34,7 +34,6 @@ vendor/lib64/libremosaic_wrapper.so
 
 # Camera dependencies
 vendor/lib/libSEF.quram.so
-vendor/lib/libexynoscamera3.so
 vendor/lib/libmfb.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
@@ -50,6 +49,7 @@ vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/etc/btcon.json
 
 # Camera dependencies - From Samsung package version A135FXXS7DXE2
+vendor/lib/libexynoscamera3.so
 vendor/lib/libexynoscamera_tdnr_plugin.so
 vendor/lib/libsensorlistener.so
 
