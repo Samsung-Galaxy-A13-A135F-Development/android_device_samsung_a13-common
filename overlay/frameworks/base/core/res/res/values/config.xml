@@ -215,6 +215,10 @@
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.003921569</item>
     
+   <!-- Status bar padding -->
+   <dimen name="status_bar_indicator_padding">65.0px</dimen>
+
+
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
