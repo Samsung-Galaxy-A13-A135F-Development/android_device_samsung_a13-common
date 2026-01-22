@@ -21,7 +21,7 @@ vendor/firmware/dax_param.bin|a23209fbb1c3616e6441962b00069a8ad31dbcb6
 vendor/firmware/dual_cal_wide_sub.bin|77d8d6ab8e3c5d25cb16de6500e9b45d846a1d68
 vendor/firmware/SoundBoosterParam.bin|df0e73528e102791ec27812ef4e4501d095e7434
 
-# Bluetooth Firmware
+# Bluetooth Firmware - From Samsung package version A135FXXS7DXE2
 vendor/etc/wifi/mx140_bt.hcf
 
 # Camera - From Samsung package version A135FXXS7DXE2
