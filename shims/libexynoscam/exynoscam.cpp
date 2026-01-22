@@ -56,15 +56,6 @@ _ZN7android8hardware6camera6common6helper14CameraMetadataD1Ev(
         void*) {
 }
 
-extern "C" camera_metadata_entry_t
-_ZNK7android8hardware6camera6common6helper14CameraMetadata4findEj(
-        const void*,
-        uint32_t) {
-    camera_metadata_entry_t entry;
-    memset(&entry, 0, sizeof(entry));
-    return entry;
-}
-
 extern "C" void*
 _ZN7android8hardware6camera6common6helper14CameraMetadataaSEPK15camera_metadata(
         void* thisptr,
@@ -84,3 +75,9 @@ _ZN7android8hardware6camera6common6helper16CameraParametersD1Ev(
         void*) {
 }
 
+extern "C" camera_metadata_entry_t
+_ZN7android8hardware6camera6common6helper14CameraMetadata4findEj(
+        void* /*thisptr*/, uint32_t /*tag*/) {
+    camera_metadata_entry_t entry{};
+    return entry;
+}
