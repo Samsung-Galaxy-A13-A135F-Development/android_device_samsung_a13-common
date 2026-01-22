@@ -116,7 +116,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H 55 V 38.85714285714286 H 0 V 0 Z @dp @left</string>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -30.57777777777778 V 23.11111111111111 H 30.57777777777778 V 0 H 0 Z @dp</string>
      
     <!-- User activity timeout: Minimum screen off timeout in milliseconds.
 
