@@ -35,9 +35,7 @@ vendor/lib64/libremosaic_wrapper.so
 # Camera dependencies
 vendor/lib/libSEF.quram.so
 vendor/lib/libexynoscamera3.so
-vendor/lib/libexynoscamera_tdnr_plugin.so
 vendor/lib/libmfb.so
-vendor/lib/libsensorlistener.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
 vendor/lib/vendor.samsung.hardware.thermal@1.0.so
@@ -50,6 +48,10 @@ vendor/lib64/libuniapi.so
 vendor/lib64/libuniplugin.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/etc/btcon.json
+
+# Camera dependencies - From Samsung package version A135FXXS7DXE2
+vendor/lib/libexynoscamera_tdnr_plugin.so
+vendor/lib/libsensorlistener.so
 
 # Charger Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/mfc_fw.bin|224d420b3801e2a868a9038383a80006d4fa1541
