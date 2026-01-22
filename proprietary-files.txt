@@ -24,10 +24,8 @@ vendor/firmware/SoundBoosterParam.bin|df0e73528e102791ec27812ef4e4501d095e7434
 # Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
-# Camera
-vendor/lib/hw/camera.exynos850.so
-
 # Camera - From Samsung package version A135FXXS7DXE2
+vendor/lib/hw/camera.exynos850.so
 vendor/lib/libexynoscamera_plugin.so
 vendor/lib/libremosaic_wrapper.so
 
