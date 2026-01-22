@@ -18,6 +18,7 @@ cc_library_shared {
     srcs: ["exynoscam.cpp"],
     shared_libs: [
         "libutils",
+        "libcamera_client",
         "libcamera_metadata",
     ],
     vendor: true,
