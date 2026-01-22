@@ -74,7 +74,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \
-    libGrallocMapperCamera
+    libGrallocMapperCamera:32
 
 # Charger
 PRODUCT_PACKAGES += \
