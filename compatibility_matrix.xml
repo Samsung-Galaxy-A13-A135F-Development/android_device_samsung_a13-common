@@ -20,6 +20,7 @@
         <version>3.0</version>
         <interface>
             <name>ISehBiometricsFingerprint</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
