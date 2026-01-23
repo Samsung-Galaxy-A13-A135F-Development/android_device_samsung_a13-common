@@ -1,0 +1,14 @@
+cc_prebuilt_library_shared {
+    name: "libutils-v31",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["libutils-v31.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
