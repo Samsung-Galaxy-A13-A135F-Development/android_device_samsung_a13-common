@@ -55,16 +55,6 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
-## Camera
-#$(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
-
-# Camera
-#SOONG_CONFIG_NAMESPACES += samsungCameraVars
-#SOONG_CONFIG_samsungCameraVars += extra_ids
-# ID=52 is depth camera
-# ID=54 is macro
-#SOONG_CONFIG_samsungCameraVars_extra_ids := 52,54,72
-
 ## Display
 BOARD_MINIMUM_DISPLAY_BRIGHTNESS := 1
 TARGET_SCREEN_DENSITY := 400
