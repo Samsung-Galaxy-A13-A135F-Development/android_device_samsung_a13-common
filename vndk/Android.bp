@@ -6,9 +6,9 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm: {
-            srcs: ["libutils-v31.so"],
+            srcs: ["32/libutils-v31.so"],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "32",
     check_elf_files: false,
 }
