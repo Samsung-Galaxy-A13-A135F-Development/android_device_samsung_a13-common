@@ -42,8 +42,10 @@ blob_fixups: blob_fixups_user_type = {
             '80 0E 40 F9 E1 03 16 AA 82 0C 80 52 08 00 80 D2'),
     'vendor/lib64/libcrypto-tm.so': blob_fixup()
         .replace_needed('libssl.so', 'libssl-tm.so'),
-    'vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service': blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v31.so'),
+    'vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service' : blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v31.so')
+        .replace_needed('libhidlbase.so', 'libhidlbase-v31.so')
+        .replace_needed('libbinder.so', 'libbinder-v31.so'),
     'vendor/lib/libexynoscamera3.so': blob_fixup()
         .add_needed('libshim_camera.so'),
     'vendor/lib/hw/camera.exynos850.so': blob_fixup()
