@@ -217,8 +217,8 @@
     
    <!-- Status bar padding -->
    <dimen name="status_bar_indicator_padding">65.0px</dimen>
-   <dimen name="status_bar_padding_start">35dp</dimen>
-   <dimen name="status_bar_padding_end">35dp</dimen>
+   <dimen name="status_bar_padding_start">50dp</dimen>
+   <dimen name="status_bar_padding_end">65dp</dimen>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
