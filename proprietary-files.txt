@@ -57,6 +57,9 @@ vendor/etc/media_profiles_V1_0.xml
 # Fingerprint - From Samsung package version A135FXXS7DXE2
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
 vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
+vendor/etc/init/fingerprint_common.rc
+vendor/etc/init/init.fingerprint.rc
+vendor/lib/hw/fingerprint.default.so
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
 vendor/lib/libegis_fp_normal_sensor_test.so
