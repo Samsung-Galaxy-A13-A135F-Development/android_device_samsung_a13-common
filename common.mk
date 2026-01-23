@@ -83,10 +83,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung
-
 # VIB
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
