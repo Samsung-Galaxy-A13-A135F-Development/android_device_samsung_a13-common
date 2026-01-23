@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl:32 \
-    audio.bluetooth.default:32 \
+    audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
     audio.primary.universal3830
@@ -63,8 +63,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl:32 \
-    android.hardware.bluetooth@1.0-service:32 \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service \
     libbt-vendor:32
 
 PRODUCT_COPY_FILES += \
