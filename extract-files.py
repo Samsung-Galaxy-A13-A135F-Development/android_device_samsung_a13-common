@@ -69,6 +69,8 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'_ZN7android6Thread3runEPKcim', b'_ZN7utils326Thread3runEPKcim'),
     'vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc': blob_fixup()
         .regex_replace('    interface vendor.samsung.hardware.camera.provider@4.0::ISehCameraProvider legacy/0\n', ''),
+    'vendor/lib/libsynaFpSensorTestNwd.so': blob_fixup()
+        .add_needed('libshim_idiv0.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
