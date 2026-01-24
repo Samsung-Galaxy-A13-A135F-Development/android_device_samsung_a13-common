@@ -55,7 +55,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
 
 ## Display
 BOARD_MINIMUM_DISPLAY_BRIGHTNESS := 1
