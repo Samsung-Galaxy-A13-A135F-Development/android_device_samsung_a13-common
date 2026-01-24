@@ -227,6 +227,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libprocessgroup_shim
 
+# Camera
+PRODUCT_PACKAGES += \
+    cameraserver:32
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
