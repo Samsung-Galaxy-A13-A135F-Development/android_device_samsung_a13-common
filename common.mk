@@ -230,8 +230,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     cameraserver:32 \
-    libcamera_client.vendor:32 \
-    libcamera_metadata.vendor:32
+    libcamera_client:32 \
+    libcamera_metadata:32
 
 # Power
 PRODUCT_PACKAGES += \
