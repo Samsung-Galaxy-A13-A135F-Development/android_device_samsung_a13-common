@@ -250,6 +250,9 @@ on post-fs-data
     chown system radio /sys/class/camera/rear/rear3_moduleid
     chown system radio /sys/class/camera/rear/rear3_tilt
 
+    # Camera::EarlyInit
+    setprop persist.camera.earlyinit 0
+
     # Access permission for input_suspend
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend

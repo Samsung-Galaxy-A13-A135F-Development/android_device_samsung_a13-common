@@ -184,7 +184,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml \
-    frameworks/native/data/etc/android.hardware.@camera.autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.autofocus.xml \
+    frameworks/native/data/etc/android.hardware.camera.autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
@@ -231,7 +231,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     cameraserver:32 \
     libcamera_client:32 \
-    libcamera_metadata:32
+    libcamera_metadata:32 \
+    android.hardware.camera.provider@2.4-legacy \
+    android.hardware.camera.provider@2.5-legacy \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    camera.device@3.3-impl \
+    camera.device@3.4-impl \
+    camera.device@3.5-impl \
+    android.hardware.camera.device@3.6.vendor
 
 # Power
 PRODUCT_PACKAGES += \
