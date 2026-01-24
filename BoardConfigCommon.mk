@@ -18,6 +18,9 @@ COMMON_PATH := device/samsung/a13-common
 ## Inherit proprietary vendor configuartion
 include vendor/samsung/a13-common/BoardConfigVendor.mk
 
+# Build with broken namespaces
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 ## Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
