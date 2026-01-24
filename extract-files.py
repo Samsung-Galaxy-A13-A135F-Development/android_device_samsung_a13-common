@@ -46,8 +46,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v31.so')
         .replace_needed('libhidlbase.so', 'libhidlbase-v31.so')
         .replace_needed('libbinder.so', 'libbinder-v31.so'),
-    'vendor/lib/hw/camera.exynos850.so': blob_fixup()
-        .add_needed('libshim_exynoscam.so'),
     'vendor/lib/libexynoscamera3.so': blob_fixup()
         .add_needed('libshim_camera.so'),
     (
