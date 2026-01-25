@@ -237,7 +237,9 @@ PRODUCT_PACKAGES += \
     camera.device@3.3-impl \
     camera.device@3.4-impl \
     camera.device@3.5-impl \
-    android.hardware.camera.device@3.6.vendor
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider-service_32.samsung \
+    libGrallocMapperCamera:32
 
 # Power
 PRODUCT_PACKAGES += \
