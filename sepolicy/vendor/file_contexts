@@ -37,6 +37,7 @@
 /mnt/vendor/efs/wv.keys                                                                                   u:object_r:mnt_vendor_file:s0
 
 # Fingerprint
+/(vendor|system/vendor)/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service                                 u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp                                                                                            u:object_r:fp_sensor_device:s0
 
 # GNSS
