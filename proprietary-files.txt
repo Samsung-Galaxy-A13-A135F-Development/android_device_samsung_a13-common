@@ -127,10 +127,8 @@ vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so
 
-# OMX Firmware
-vendor/etc/seccomp_policy/mediacodec.policy
-
 # OMX Firmware - From Samsung package version A135FXXS7DXE2
+vendor/etc/seccomp_policy/mediacodec.policy
 vendor/firmware/is_lib.bin|63135150b9d8710aaa8b4a9fda7e7dce2eb681d1
 vendor/firmware/is_rta.bin|a748e5935031331033c9b6cc7937dcd6c436a6cf
 
@@ -244,3 +242,4 @@ vendor/etc/wifi/slsi_reg_database.bin
 # Swap file
 vendor/etc/fstab.ramplus
 vendor/etc/init/init.ramplus.rc
+	
