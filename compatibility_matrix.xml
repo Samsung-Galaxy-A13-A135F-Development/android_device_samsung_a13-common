@@ -8,6 +8,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.camera.provider</name>
+        <version>4.0</version>
+        <interface>
+            <name>ISehCameraProvider</name>
+            <regex-instance>[^/]+/[0-9]+</regex-instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
         <version>2.1</version>
         <interface>
@@ -22,6 +30,14 @@
                 <name>ISehBiometricsFingerprint</name>
                 <instance>default</instance>
             </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.camera.provider</name>
+        <version>4.0</version>
+        <interface>
+            <name>ISehCameraProvider</name>
+            <instance>legacy/0</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.camera.provider</name>

@@ -42,6 +42,10 @@ blob_fixups: blob_fixups_user_type = {
             '80 0E 40 F9 E1 03 16 AA 82 0C 80 52 08 00 80 D2'),
     'vendor/lib64/libcrypto-tm.so': blob_fixup()
         .replace_needed('libssl.so', 'libssl-tm.so'),
+    'vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service' : blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v31.so')
+        .replace_needed('libhidlbase.so', 'libhidlbase-v31.so')
+        .replace_needed('libbinder.so', 'libbinder-v31.so'),
     'vendor/lib/libexynoscamera3.so': blob_fixup()
         .add_needed('libshim_camera.so'),
     (
@@ -63,6 +67,8 @@ blob_fixups: blob_fixups_user_type = {
     ) : blob_fixup()
         .add_needed('libutils-v32.so')
         .binary_regex_replace(b'_ZN7android6Thread3runEPKcim', b'_ZN7utils326Thread3runEPKcim'),
+    'vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc': blob_fixup()
+        .regex_replace('    interface vendor.samsung.hardware.camera.provider@4.0::ISehCameraProvider legacy/0\n', ''),
     'vendor/lib/libsynaFpSensorTestNwd.so': blob_fixup()
         .add_needed('libshim_idiv0.so'),
 }  # fmt: skip
