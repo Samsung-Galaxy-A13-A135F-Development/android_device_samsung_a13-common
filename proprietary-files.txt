@@ -214,12 +214,11 @@ vendor/lib64/libteecl.so
 # VNDK - from prebuilts/vndk/v32 - android-15.0.0_r20
 vendor/lib64/libcrypto-tm.so;FIX_SONAME|8d9f1c579d9b947539919c95351a4a2c365860de|285b597b3f1adff0fe1f6c5d10d4fdd90b8e5e54
 
-# Sensors
+# Sensors - From Samsung package version A135FXXS7DXE2
 vendor/etc/sensors/hals.conf
-vendor/lib/sensors.grip.so
 vendor/lib/sensors.sensorhub.so
-vendor/lib64/sensors.grip.so
-vendor/lib64/sensors.sensorhub.so
+vendor/lib/sensors.inputvirtual.so
+vendor/lib/sensors.grip.so
 
 # Widevine
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
