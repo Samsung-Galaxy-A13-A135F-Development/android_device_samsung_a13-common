@@ -66,16 +66,6 @@ vendor/lib/libqfp_sensortest.so
 vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
-# Firmware
-vendor/firmware/setfile_gm2.bin
-vendor/firmware/setfile_sr846.bin
-vendor/firmware/tdnr_S5KGM2.json
-vendor/firmware/tdnr_SR846.json
-vendor/firmware/setfile_4ha.bin
-vendor/firmware/setfile_hi1336.bin
-vendor/firmware/tdnr_HI1336.json
-vendor/firmware/tdnr_S5K4HA.json
-
 # Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/abox_tplg.bin|9c39eaaacdb406fc05b34ade87e35b5c22819119
 vendor/firmware/abox_tplg.conf|77fb5a2f25c003ef761291b55cd5391aca7d877a
