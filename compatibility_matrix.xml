@@ -24,14 +24,6 @@
             </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.camera.provider</name>
-        <version>2.6</version>
-        <interface>
-            <name>ICameraProvider</name>
-            <instance>legacy/0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.frameworks.schedulerservice</name>
         <version>1.0</version>
         <interface>
