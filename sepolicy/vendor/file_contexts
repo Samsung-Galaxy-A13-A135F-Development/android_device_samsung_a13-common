@@ -7,7 +7,7 @@
 /sys/devices/platform/(.*)/block/mmcblk0/mmcblk0p[0-9]+/start                                             u:object_r:sysfs_block:s0
 
 # Camera
-/(vendor|system/vendor)/bin/hw/android.hardware.camera.provider-service_32.samsung                        u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service                        u:object_r:hal_camera_default_exec:s0
 /dev/m2m1shot_scaler0                                                                                     u:object_r:m2m1shot_device:s0
 /sys/devices/virtual/camera/flash/rear_flash                                                              u:object_r:sysfs_camera_writable:s0
 /sys/devices/virtual/camera/rear/fw_update                                                                u:object_r:sysfs_camera_writable:s0
