@@ -43,7 +43,7 @@ vendor/lib/libsensorlistener.so
 # Charger Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/mfc_fw.bin|224d420b3801e2a868a9038383a80006d4fa1541
 
-# Codecs
+# Codecs - From Samsung package version A135FXXS7DXE2
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
