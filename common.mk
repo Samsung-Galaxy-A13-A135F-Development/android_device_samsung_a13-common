@@ -232,6 +232,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung \
     libGrallocMapperCamera
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.samsung:32
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
