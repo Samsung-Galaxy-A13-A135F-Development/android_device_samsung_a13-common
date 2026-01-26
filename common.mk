@@ -229,8 +229,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.samsung \
-    libGrallocMapperCamera
+    android.hardware.camera.provider-service_32.samsung \
+    libGrallocMapperCamera:32
 
 # Fingerprint
 PRODUCT_PACKAGES += \
