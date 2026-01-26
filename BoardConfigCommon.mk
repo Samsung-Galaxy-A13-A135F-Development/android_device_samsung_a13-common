@@ -61,6 +61,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_BOOTCONFIG += androidboot.selinux=permissive
 
 ## Camera
+$(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
 $(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
 
 # Camera
