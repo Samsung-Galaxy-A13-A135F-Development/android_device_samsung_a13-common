@@ -94,6 +94,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libGrallocWrapper
 
+PRODUCT_PACKAGES += \
+    libexynosdisplay:32 \
+    libexynosgraphicbuffer:32 \
+    libexynosscaler:32 \
+    libexynosutils:32 \
+    libexynosv4l2:32 \
+    libstagefrighthw:32
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -230,6 +238,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \
+    libgiantmscl:32 \
     libGrallocMapperCamera:32
 
 # Fingerprint
