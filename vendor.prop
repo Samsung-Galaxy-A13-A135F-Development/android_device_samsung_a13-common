@@ -72,3 +72,11 @@ ro.boot.wificountrycode=00
 ## Fingerprint
 ro.vendor.fingerprint.type=side
 ro.vendor.fingerprint.sensor_location=1080|800|350
+
+
+## LMKD
+ro.lmk.critical_upgrade=false
+ro.lmk.enhance_batch_kill=true
+ro.lmk.enable_adaptive_lmk=true
+ro.config.low_ram=true
+ro.lmk.kill_heaviest_task=true
