@@ -241,6 +241,10 @@ PRODUCT_PACKAGES += \
     libgiantmscl:32 \
     libGrallocMapperCamera:32
 
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl:32
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung:32
