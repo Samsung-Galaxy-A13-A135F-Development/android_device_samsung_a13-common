@@ -85,8 +85,6 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     product \
     odm
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
-
 ## Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -121,17 +119,6 @@ $(call soong_config_set,libinit,vendor_init_lib,//device/samsung/a13-common:libi
 
 # A/B
 AB_OTA_UPDATER := false
-
-## Lineage Health
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/batt_slate_mode)
-$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
-$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_toggle,true)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_deadline,false)
-$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
-$(call soong_config_set,lineage_health,fast_charge_value_none,1)
-$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
 ## Manifest
 # HIDL
