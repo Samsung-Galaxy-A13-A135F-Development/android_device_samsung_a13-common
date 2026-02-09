@@ -142,6 +142,12 @@ vendor/lib/libSemDataProps.so
 vendor/lib/libSemTelephonyProps.so
 vendor/lib/libprotobuf-cpp-full-21.7.so
 vendor/lib/libril_sem.so
+vendor/lib/vendor.samsung.hardware.radio@2.2.so
+vendor/lib/vendor.samsung.hardware.radio@2.1.so
+vendor/lib/vendor.samsung.hardware.radio@2.0.so
+vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so
+vendor/lib/vendor.samsung.hardware.radio.bridge@2.1.so
+vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 
 ## RIL - From A14
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|669709f8ff7d3435592c518ad0ba087f42b65606
