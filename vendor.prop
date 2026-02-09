@@ -79,3 +79,7 @@ ro.lmk.enhance_batch_kill=true
 ro.lmk.enable_adaptive_lmk=true
 ro.config.low_ram=true
 ro.lmk.kill_heaviest_task=true
+
+# Camera
+ro.camera.disableJpegR=true
+ro.camera.disableHeicUltraHDR=true
