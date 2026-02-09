@@ -254,9 +254,9 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    secril_config_svc \
-    sehradiomanager \
-    cbd
+    secril_config_svc:32 \
+    sehradiomanager:32 \
+    cbd:32
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
