@@ -28,7 +28,6 @@ vendor/etc/wifi/mx140_bt.hcf
 vendor/lib/hw/camera.exynos850.so
 vendor/lib/libexynoscamera_plugin.so
 vendor/lib/libremosaic_wrapper.so
-vendor/lib/libremosaiclib.so
 
 # Camera dependencies - From Samsung package version A135FXXS7DXE2
 vendor/lib/libSEF.quram.so
@@ -40,16 +39,6 @@ vendor/etc/btcon.json
 vendor/lib/libexynoscamera3.so
 vendor/lib/libexynoscamera_tdnr_plugin.so
 vendor/lib/libsensorlistener.so
-vendor/lib/libacryl.so
-vendor/lib/libcsc.so
-vendor/lib/libdualcam_refocus_image.so
-vendor/lib/libdualcam_refocus_video.so
-vendor/lib/libhwjpeg.so
-vendor/lib/libgiantmscl.so
-vendor/lib/libmpbase.so
-vendor/lib/librmsclib1_32bit.so
-vendor/lib/libvkmanager_vendor.so
-vendor/lib/libimagecodec_native.quram.so
 
 # Charger Firmware - From Samsung package version A135FXXS7DXE2
 vendor/firmware/mfc_fw.bin|224d420b3801e2a868a9038383a80006d4fa1541
