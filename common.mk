@@ -234,7 +234,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \
-    libgiantmscl:32 \
     libGrallocMapperCamera:32
 
 # RenderScript
