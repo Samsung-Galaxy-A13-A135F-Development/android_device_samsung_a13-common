@@ -43,6 +43,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-full-21.7.so', 'libprotobuf-cpp-full-21.7-u.so'),
     'vendor/lib64/libcrypto-tm.so': blob_fixup()
         .replace_needed('libssl.so', 'libssl-tm.so'),
+    'vendor/lib/nfc_nci_nxpsn.so': blob_fixup()
+        .binary_regex_replace(b'ro.boot.flash.locked', b'ro.camera.notify_nfc'),
     (
         'vendor/lib64/libexynoscamera3.so',
         'vendor/lib/libexynoscamera3.so',
