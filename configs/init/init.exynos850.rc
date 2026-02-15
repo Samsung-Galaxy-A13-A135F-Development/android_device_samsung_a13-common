@@ -196,6 +196,7 @@ on post-fs-data
 # Permissions Camera
     mkdir /data/vendor/camera 0770 cameraserver system
     chown cameraserver cameraserver /sys/kernel/mm/vmscan/mem_boost_mode
+    chown cameraserver cameraserver /sys/kernel/ems/ecs/enabled
     chown system radio /sys/class/camera/rear/rear_camfw
     chown system radio /sys/class/camera/rear/rear_camfw_full
     chown system radio /sys/class/camera/rear/rear_checkfw_user
@@ -249,9 +250,6 @@ on post-fs-data
     chown cameraserver cameraserver /sys/class/camera/rear/rear3_sensorid
     chown system radio /sys/class/camera/rear/rear3_moduleid
     chown system radio /sys/class/camera/rear/rear3_tilt
-
-    # Camera::EarlyInit
-    setprop persist.camera.earlyinit 0
 
     # Access permission for input_suspend
     chown system system /sys/class/power_supply/battery/input_suspend
