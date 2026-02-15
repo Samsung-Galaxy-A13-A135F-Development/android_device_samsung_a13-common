@@ -191,8 +191,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
-    frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
-    frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
     frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -232,10 +230,11 @@ PRODUCT_PACKAGES += \
     libprocessgroup_shim
 
 # Camera
+$(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
+$(call soong_config_set,samsungCameraVars,extra_ids,54,52) # ID=54 is macro and ID=52 is depth
+
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service_32.samsung \
-    libGrallocMapperCamera:32 \
-    libgiantmscl
+    android.hardware.camera.provider-service_32.samsung
 
 # RenderScript
 PRODUCT_PACKAGES += \
