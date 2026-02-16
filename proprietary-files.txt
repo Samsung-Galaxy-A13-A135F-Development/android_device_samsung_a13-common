@@ -8,30 +8,28 @@ vendor/etc/usb_audio_policy_configuration.xml
 vendor/lib/soundfx/libswdap.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
-
-# Audio - From Samsung package version A135FXXS7DXE2
 vendor/etc/floating_feature.xml
 
-# Audio Firmware - From Samsung package version A135FXXS7DXE2
-vendor/firmware/AP_AUDIO_SLSI.bin|538efa9570089969e14c989419cc685a9d163650
-vendor/firmware/APDV_AUDIO_SLSI.bin|c9d03c72d2462bf30a0140f77c03d2ac524f4881
-vendor/firmware/calliope_dram.bin|1c69ce59ee8006d5ba7ced7caa61182e797f2b19
-vendor/firmware/calliope_dram_2.bin|8685c335b813d8f97ddf63c214e4093a146a0b39
-vendor/firmware/calliope_sram.bin|cff2c652c6f1cb88a8b3545b9c169a7a61e2852b
-vendor/firmware/calliope_sram_2.bin|2da51c965eddb606f6eba42676e19e813187809e
-vendor/firmware/dax_param.bin|a23209fbb1c3616e6441962b00069a8ad31dbcb6
-vendor/firmware/dual_cal_wide_sub.bin|77d8d6ab8e3c5d25cb16de6500e9b45d846a1d68
-vendor/firmware/SoundBoosterParam.bin|df0e73528e102791ec27812ef4e4501d095e7434
+# Audio Firmware - From Samsung package version A135FXXSDEYJ1
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/APDV_AUDIO_SLSI.bin
+vendor/firmware/calliope_dram.bin
+vendor/firmware/calliope_dram_2.bin
+vendor/firmware/calliope_sram.bin
+vendor/firmware/calliope_sram_2.bin
+vendor/firmware/dax_param.bin
+vendor/firmware/dual_cal_wide_sub.bin
+vendor/firmware/SoundBoosterParam.bin
 
-# Bluetooth Firmware - From Samsung package version A135FXXS7DXE2
+# Bluetooth Firmware - From Samsung package version A135FXXSDEYJ1
 vendor/etc/wifi/mx140_bt.hcf
 
-# Camera - From Samsung package version A135FXXS7DXE2
+# Camera - From Samsung package version A135FXXSDEYJ1
 vendor/lib/hw/camera.exynos850.so
 vendor/lib/libexynoscamera_plugin.so
 vendor/lib/libremosaic_wrapper.so
 
-# Camera dependencies - From Samsung package version A135FXXS7DXE2
+# Camera dependencies - From Samsung package version A135FXXSDEYJ1
 vendor/lib/libSEF.quram.so
 vendor/lib/libmfb.so
 vendor/lib/libuniapi.so
@@ -44,15 +42,15 @@ vendor/lib/libsensorlistener.so
 vendor/lib/libhwjpeg.so
 vendor/lib/nfc_nci_nxpsn.so
 
-# Charger Firmware - From Samsung package version A135FXXS7DXE2
-vendor/firmware/mfc_fw.bin|224d420b3801e2a868a9038383a80006d4fa1541
+# Charger Firmware - From Samsung package version A135FXXSDEYJ1
+vendor/firmware/mfc_fw.bin
 
-# Codecs - From Samsung package version A135FXXS7DXE2
+# Codecs - From Samsung package version A135FXXSDEYJ1
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
 
-# Fingerprint - From Samsung package version A135FXXS7DXE2
+# Fingerprint - From Samsung package version A135FXXSDEYJ1
 vendor/etc/init/fingerprint_common.rc
 vendor/etc/init/init.fingerprint.rc
 vendor/lib/hw/fingerprint.default.so
@@ -64,26 +62,26 @@ vendor/lib/libqfp_sensortest.so
 vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
-# Firmware - From Samsung package version A135FXXS7DXE2
-vendor/firmware/abox_tplg.bin|9c39eaaacdb406fc05b34ade87e35b5c22819119
-vendor/firmware/abox_tplg.conf|77fb5a2f25c003ef761291b55cd5391aca7d877a
-vendor/firmware/aw882xx_pid_2055a_acf.bin|9ba049b95ff52b9993fe5cef5dd4852185d51ed8
-vendor/firmware/aw882xx_pid_2055b_acf.bin|e0a0cc4168edd7c74a42dbb309fa592e2382ef47
-vendor/firmware/listenbackeffect.bin|89a36aed92fe90138ac013002c830bd31be3f8f4
-vendor/firmware/MCD_NACHO_slog.bin|aeca8c6a880f1238d0fe620bc385b3c4d9c78e8a
-vendor/firmware/rxse.bin|bd83a50e82eca6cd0ebf68586a68b01ff3d9a363
-vendor/firmware/sb_others.bin|d20fbc0cde5163005ae7a70f9e80254371fdcaf4
-vendor/firmware/setfile_gc02m1.bin|510e1fe0b9a346d929237c8e74d0442c873cc488
-vendor/firmware/setfile_gc02m1_macro.bin|0e7fc11637873df3cceddd80ecd5ac23b805b136
-vendor/firmware/setfile_gc08a3.bin|f5be4367537e4cc28dfc585e88ba426047beb7bf
-vendor/firmware/setfile_gc5035.bin|5c48570fc8c8cb5e6647764148d6156245b4f17b
-vendor/firmware/setfile_jn1.bin|5b29e763f7c09df04fcd8bfd3e0959e8db7f9afc
-vendor/firmware/tdnr_GC02M1.json|6407baaffc0ad8abe1d2481ee1f8221564f1434a
-vendor/firmware/tdnr_GC08A3.json|bd22978f8a6f863014807ce8ccee734b865a0803
-vendor/firmware/tdnr_GC5035.json|1182087f001f657ed53135b838ee8d2125ee912a
-vendor/firmware/tdnr_S5KJN1.json|a879420dfb8a36431afeb00080be56745c6498fe
-vendor/firmware/txse1.bin|ac87957065f7bd11b6998202a56cc093862a28a0
-vendor/firmware/txse2.bin|e4c5be56ceca0bf536d45d4aa5a2be6b6564bb5b
+# Firmware - From Samsung package version A135FXXSDEYJ1
+vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
+vendor/firmware/aw882xx_pid_2055a_acf.bin
+vendor/firmware/aw882xx_pid_2055b_acf.bin
+vendor/firmware/listenbackeffect.bin
+vendor/firmware/MCD_NACHO_slog.bin
+vendor/firmware/rxse.bin
+vendor/firmware/sb_others.bin
+vendor/firmware/setfile_gc02m1.bin
+vendor/firmware/setfile_gc02m1_macro.bin
+vendor/firmware/setfile_gc08a3.bin
+vendor/firmware/setfile_gc5035.bin
+vendor/firmware/setfile_jn1.bin
+vendor/firmware/tdnr_GC02M1.json
+vendor/firmware/tdnr_GC08A3.json
+vendor/firmware/tdnr_GC5035.json
+vendor/firmware/tdnr_S5KJN1.json
+vendor/firmware/txse1.bin
+vendor/firmware/txse2.bin
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.exynos850.so
@@ -115,10 +113,10 @@ vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so
 
-# OMX Firmware - From Samsung package version A135FXXS7DXE2
+# OMX Firmware - From Samsung package version A135FXXSDEYJ1
 vendor/etc/seccomp_policy/mediacodec.policy
-vendor/firmware/is_lib.bin|63135150b9d8710aaa8b4a9fda7e7dce2eb681d1
-vendor/firmware/is_rta.bin|a748e5935031331033c9b6cc7937dcd6c436a6cf
+vendor/firmware/is_lib.bin
+vendor/firmware/is_rta.bin
 
 # RIL
 vendor/bin/cass
@@ -198,7 +196,7 @@ vendor/lib64/libteecl.so
 # VNDK - from prebuilts/vndk/v32 - android-15.0.0_r20
 vendor/lib64/libcrypto-tm.so;FIX_SONAME|8d9f1c579d9b947539919c95351a4a2c365860de|285b597b3f1adff0fe1f6c5d10d4fdd90b8e5e54
 
-# Sensors - From Samsung package version A135FXXS7DXE2
+# Sensors - From Samsung package version A135FXXSDEYJ1
 vendor/etc/sensors/hals.conf
 vendor/lib/sensors.sensorhub.so
 vendor/lib/sensors.inputvirtual.so
