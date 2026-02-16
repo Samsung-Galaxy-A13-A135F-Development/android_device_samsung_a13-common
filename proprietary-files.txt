@@ -27,7 +27,9 @@ vendor/etc/wifi/mx140_bt.hcf
 # Camera - From Samsung package version A135FXXSDEYJ1
 vendor/lib/hw/camera.exynos850.so
 vendor/lib/libexynoscamera_plugin.so
+vendor/lib/libexynoscamera_plugin_utils.so
 vendor/lib/libremosaic_wrapper.so
+vendor/lib/libremosaiclib.so
 
 # Camera dependencies - From Samsung package version A135FXXSDEYJ1
 vendor/lib/libSEF.quram.so
@@ -38,6 +40,7 @@ vendor/lib/vendor.samsung.hardware.thermal@1.0.so
 vendor/etc/btcon.json
 vendor/lib/libexynoscamera3.so
 vendor/lib/libexynoscamera_tdnr_plugin.so
+vendor/lib/librmsclib1_32bit.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libhwjpeg.so
 vendor/lib/nfc_nci_nxpsn.so
