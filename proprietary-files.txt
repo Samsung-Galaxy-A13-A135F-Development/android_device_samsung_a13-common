@@ -26,33 +26,21 @@ vendor/firmware/SoundBoosterParam.bin|df0e73528e102791ec27812ef4e4501d095e7434
 # Bluetooth Firmware - From Samsung package version A135FXXS7DXE2
 vendor/etc/wifi/mx140_bt.hcf
 
-# Camera - From Samsung package version a04s
-vendor/lib64/hw/camera.exynos850.so
+# Camera - From Samsung package version A135FXXS7DXE2
 vendor/lib/hw/camera.exynos850.so
-vendor/lib64/libexynoscamera_plugin.so
 vendor/lib/libexynoscamera_plugin.so
-vendor/lib64/libremosaic_wrapper.so
 vendor/lib/libremosaic_wrapper.so
 
-# Camera dependencies - From Samsung package version a04s
-vendor/lib64/libSEF.quram.so
+# Camera dependencies - From Samsung package version A135FXXS7DXE2
 vendor/lib/libSEF.quram.so
-vendor/lib64/libmfb.so
 vendor/lib/libmfb.so
-vendor/lib64/libuniapi.so
 vendor/lib/libuniapi.so
-vendor/lib64/libuniplugin.so
 vendor/lib/libuniplugin.so
-vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib/vendor.samsung.hardware.thermal@1.0.so
 vendor/etc/btcon.json
-vendor/lib64/libexynoscamera3.so
 vendor/lib/libexynoscamera3.so
-vendor/lib64/libexynoscamera_tdnr_plugin.so
 vendor/lib/libexynoscamera_tdnr_plugin.so
-vendor/lib64/libsensorlistener.so
 vendor/lib/libsensorlistener.so
-vendor/lib64/libhwjpeg.so
 vendor/lib/libhwjpeg.so
 vendor/lib/nfc_nci_nxpsn.so
 

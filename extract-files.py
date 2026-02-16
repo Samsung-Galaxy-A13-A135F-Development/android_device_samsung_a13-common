@@ -45,10 +45,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libssl.so', 'libssl-tm.so'),
     'vendor/lib/nfc_nci_nxpsn.so': blob_fixup()
         .binary_regex_replace(b'ro.boot.flash.locked', b'ro.camera.notify_nfc'),
-    (
-        'vendor/lib64/libexynoscamera3.so',
-        'vendor/lib/libexynoscamera3.so',
-    ) : blob_fixup()
+    'vendor/lib/libexynoscamera3.so': blob_fixup()
         .add_needed('libshim_camera.so'),
     (
     'vendor/lib/libsensorlistener.so',
