@@ -234,15 +234,10 @@ PRODUCT_PACKAGES += \
 
 # Camera
 $(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
-$(call soong_config_set,samsungCameraVars,extra_ids,54,52) # ID=54 is macro and ID=52 is depth
+$(call soong_config_set,samsungCameraVars,extra_ids,3,4,20,23,50,52)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \
-    camera.device@1.0-impl:32 \
-    camera.device@3.2-impl:32 \
-    camera.device@3.3-impl:32 \
-    camera.device@3.4-impl:32 \
-    camera.device@3.5-impl:32 \
     libGrallocMapperCamera:32 \
     libgiantmscl:32
 
