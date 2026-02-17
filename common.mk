@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     gralloc.universal3830
 
 PRODUCT_PACKAGES += \
-    libGrallocWrapper
+    libGrallocWrapper \
+    libexynosdisplay:32
 
 PRODUCT_PACKAGES += \
     libexynosdisplay:32 \
@@ -100,6 +101,8 @@ PRODUCT_PACKAGES += \
     libexynosscaler:32 \
     libexynosutils:32 \
     libexynosv4l2:32 \
+    libacryl:32 \
+    libcsc:32 \
     libstagefrighthw:32
 
 # Dynamic Partitions
@@ -235,6 +238,11 @@ $(call soong_config_set,samsungCameraVars,extra_ids,54,52) # ID=54 is macro and 
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \
+    camera.device@1.0-impl:32 \
+    camera.device@3.2-impl:32 \
+    camera.device@3.3-impl:32 \
+    camera.device@3.4-impl:32 \
+    camera.device@3.5-impl:32 \
     libGrallocMapperCamera:32 \
     libgiantmscl:32
 

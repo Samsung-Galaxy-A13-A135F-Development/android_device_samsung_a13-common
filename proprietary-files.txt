@@ -31,9 +31,13 @@ vendor/lib/libexynoscamera_plugin_utils.so
 vendor/lib/libremosaic_wrapper.so
 vendor/lib/libremosaiclib.so
 
-# Camera dependencies - From Samsung package version A135FXXSDEYJ1
+# Camera dependencies - From Samsung package version A135FXXSDEYJ
+vendor/lib/libexifa.camera.samsung.so
+vendor/lib/libhdrwrapper.so
+vendor/lib/libhwjpeg.so
 vendor/lib/libSEF.quram.so
 vendor/lib/libmfb.so
+vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
 vendor/lib/vendor.samsung.hardware.thermal@1.0.so
@@ -41,8 +45,10 @@ vendor/etc/btcon.json
 vendor/lib/libexynoscamera3.so
 vendor/lib/libexynoscamera_tdnr_plugin.so
 vendor/lib/librmsclib1_32bit.so
+vendor/lib/libsecfr_engine.so
+vendor/lib/libsecfr_model.so
+vendor/lib/libsec2lsi_conversion.so
 vendor/lib/libsensorlistener.so
-vendor/lib/libhwjpeg.so
 vendor/lib/nfc_nci_nxpsn.so
 
 # Charger Firmware - From Samsung package version A135FXXSDEYJ1
