@@ -37,6 +37,7 @@ vendor/lib/libhdrwrapper.so
 vendor/lib/libhwjpeg.so
 vendor/lib/libSEF.quram.so
 vendor/lib/libmfb.so
+vendor/lib/libmpbase.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
