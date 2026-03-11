@@ -261,9 +261,18 @@ on post-fs-data
     chmod 0660 /sys/class/camera/flash/rear_flash
     chown cameraserver system /sys/class/camera/flash/rear_flash
 
+# Flashlight control for HAL3
+   chmod 0660 /sys/class/leds/fled-s2mu106/fled_mode
+   chown system camera /sys/class/leds/fled-s2mu106/fled_mode
+   chmod 0660 /sys/class/leds/fled-s2mu106/fled_torch_curr
+   chown system camera /sys/class/leds/fled-s2mu106/fled_torch_curr
+
 # Permissions for SVC
     chown system system /sys/devices/svc/Camera/SVC_rear_module
     chown system system /sys/devices/svc/Camera/SVC_front_module
+
+# Video
+    mkdir /data/vendor/media 0700 mediacodec mediacodec
 
 # HWC data
     mkdir /data/vendor/log/hwc 0771 system graphics
@@ -405,6 +414,10 @@ on boot
     chown system system /efs/lpm_info.log
     chmod 0660 /efs/lpm_info.log
 
+    # Permissions for gnss
+    chmod 0660 /dev/gnss_ipc
+    chown system system /dev/gnss_ipc
+
     #GPU
     chown radio system /sys/devices/platform/11500000.mali/cl_boost_disable
     chown radio system /sys/devices/platform/11500000.mali/dvfs_min_lock
@@ -472,11 +485,6 @@ on fs
 # Permissions for backlight
     chown system system /sys/class/backlight/panel/brightness
 
-# Permissions for LCD HMT
-    chown system system /sys/class/lcd/panel/hmt_on
-    chown system system /sys/class/lcd/panel/hmt_bright
-    chown system system /sys/class/mdnie/mdnie/hmt_color_temperature
-
 # Permissions for LCD
     chown system radio /sys/class/lcd/panel/manufacture_code
     chown system radio /sys/class/lcd/panel/lcd_type
@@ -490,7 +498,6 @@ on fs
     chown system system /sys/devices/svc/OCTA/SVC_OCTA_CHIPID
     chown system radio /sys/class/lcd/panel/xtalk_mode
     chown system radio /sys/class/lcd/panel/enable_fd
-    chown system system /sys/class/lcd/panel/mask_brightness
     chown system radio /sys/class/lcd/panel/conn_det
 
 # Permissions for MDNIE
@@ -503,15 +510,28 @@ on fs
 
 # Sensors permissions
 # Permissions for Fingerprint sensor
-    chmod 0660 /dev/esfp0
-    chown system system /dev/esfp0
+    chmod 0660 /dev/goodix_fp
+    chown system system /dev/goodix_fp
     chown system radio /sys/class/fingerprint/fingerprint/type_check
     chown system radio /sys/class/fingerprint/fingerprint/name
     chown system radio /sys/class/fingerprint/fingerprint/vendor
     chown system radio /sys/class/fingerprint/fingerprint/adm
     chown system radio /sys/class/fingerprint/fingerprint/bfs_values
-    mkdir /efs/biometrics 0770 system system
-    mkdir /efs/biometrics/meta 0770 system system
+    chown system radio /sys/class/fingerprint/fingerprint/intcnt
+    chown system radio /sys/class/fingerprint/fingerprint/resetcnt
+
+    mkdir /data/vendor/biometrics 0770 system system
+    mkdir /data/vendor/fpSnrTest 0770 system system
+
+# FINGERPRINT FRAMEWORK : starts goodixfingerprintd
+service goodixd /vendor/bin/goodixfingerprintd
+    class late_start
+    user system
+    group media_rw system
+
+on early-fs
+    start vold
+    write /sys/devices/platform/fmp/fmp-fips/fmp_fips_run 1
 
 # Sensors permissions
 # FactoryApp(SensorHub)
@@ -523,18 +543,6 @@ on fs
     chmod 0660 /efs/FactoryApp/cal_data
     chown root system /efs/FactoryApp/mag_cal_data
     chmod 0660 /efs/FactoryApp/mag_cal_data
-
-# Accelerometer_sensor
-    chown system radio /sys/class/sensors/accelerometer_sensor/raw_data
-    chown system radio /sys/class/sensors/accelerometer_sensor/calibration
-    chown system radio /sys/class/sensors/accelerometer_sensor/reactive_alert
-    chown system radio /sys/class/sensors/accelerometer_sensor/vendor
-    chown system radio /sys/class/sensors/accelerometer_sensor/name
-    chown system radio /sys/class/sensors/accelerometer_sensor/selftest
-    chown system radio /sys/class/sensors/accelerometer_sensor/lowpassfilter
-    chown system system /sys/class/sensors/accelerometer_sensor/dhr_sensor_info
-    chown system system /efs/calibration_data
-    chmod 0666 /efs/calibration_data
 
 # Gyro_sensor
      chown system radio /sys/class/sensors/gyro_sensor/power_on
@@ -562,6 +570,18 @@ on fs
     chown system system /sys/class/sensors/light_sensor/dhr_sensor_info
     chown system radio /sys/class/sensors/light_sensor/light_circle
 
+# Accelerometer_sensor
+    chown system radio /sys/class/sensors/accelerometer_sensor/raw_data
+    chown system radio /sys/class/sensors/accelerometer_sensor/calibration
+    chown system radio /sys/class/sensors/accelerometer_sensor/reactive_alert
+    chown system radio /sys/class/sensors/accelerometer_sensor/vendor
+    chown system radio /sys/class/sensors/accelerometer_sensor/name
+    chown system radio /sys/class/sensors/accelerometer_sensor/selftest
+    chown system radio /sys/class/sensors/accelerometer_sensor/lowpassfilter
+    chown system system /sys/class/sensors/accelerometer_sensor/dhr_sensor_info
+    chown system system /efs/calibration_data
+    chmod 0666 /efs/calibration_data
+
 # Proximity_sensor
     chown system radio /sys/class/sensors/proximity_sensor/state
     chown system radio /sys/class/sensors/proximity_sensor/raw_data
@@ -571,11 +591,9 @@ on fs
     chown system radio /sys/class/sensors/proximity_sensor/name
     chown system radio /sys/class/sensors/proximity_sensor/thresh_high
     chown system radio /sys/class/sensors/proximity_sensor/thresh_low
-    chown system radio /sys/class/sensors/proximity_sensor/thresh_detect_high
-    chown system radio /sys/class/sensors/proximity_sensor/thresh_detect_low
-    chown system radio /sys/class/sensors/proximity_sensor/barcode_emul_en
     chown system radio /sys/class/sensors/proximity_sensor/prox_offset_pass
     chown system radio /sys/class/sensors/proximity_sensor/prox_trim
+    chown system radio /sys/class/sensors/proximity_sensor/modify_settings
     chown system system /sys/class/sensors/proximity_sensor/dhr_sensor_info
 
 # Barometer_sensor
@@ -595,17 +613,104 @@ on fs
     chown system radio /sys/class/sensors/ssp_sensor/mcu_update
     chown system radio /sys/class/sensors/ssp_sensor/mcu_sleep_test
     chown system radio /sys/class/sensors/ssp_sensor/sensor_dump
+    chown system radio /sys/class/sensors/ssp_sensor/ssp_flush
     chown system radio /sys/class/sensors/ssp_sensor/sensor_spec
     chown system radio /sys/class/sensors/ssp_sensor/scontext_list
+    chmod 0600 /dev/batch_io
+    chown system system /dev/batch_io
 
 # Sensorhub IIO
-    chown system radio /sys/class/sensors/ssp_sensor/ssp_flush
     chown system radio /sys/class/sensors/ssp_sensor/sensor_state
     chmod 0600 /dev/batch_io
     chown system system /dev/batch_io
 
 # Meta event
     chown system radio /sys/class/sensors/sensor_dev/flush
+
+# Abov
+    chown system radio /sys/class/sensors/grip_sensor/noti_enable
+    chown system radio /sys/class/sensors/grip_sensor/motion
+    chown system radio /sys/class/sensors/grip_sensor/unknown_state
+        chown system radio /sys/class/sensors/grip_sensor/unknown_state_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_irq_count
+    chown system radio /sys/class/sensors/grip_sensor/grip_threshold
+    chown system radio /sys/class/sensors/grip_sensor/grip_total_cap
+    chown system radio /sys/class/sensors/grip_sensor/grip_sar_enable
+    chown system radio /sys/class/sensors/grip_sensor/grip_sw_reset
+    chown system radio /sys/class/sensors/grip_sensor/grip_earjack
+    chown system radio /sys/class/sensors/grip_sensor/grip
+    chown system radio /sys/class/sensors/grip_sensor/grip_baseline
+    chown system radio /sys/class/sensors/grip_sensor/grip_raw
+    chown system radio /sys/class/sensors/grip_sensor/grip_ref_cap
+    chown system radio /sys/class/sensors/grip_sensor/grip_gain
+    chown system radio /sys/class/sensors/grip_sensor/grip_gain_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_check
+    chown system radio /sys/class/sensors/grip_sensor/grip_sar_only_mode
+    chown system radio /sys/class/sensors/grip_sensor/grip_sar_press_threshold
+    chown system radio /sys/class/sensors/grip_sensor/grip_sar_release_threshold
+    chown system radio /sys/class/sensors/grip_sensor/grip_firm_version_phone
+    chown system radio /sys/class/sensors/grip_sensor/grip_firm_version_panel
+    chown system radio /sys/class/sensors/grip_sensor/grip_firm_update
+    chown system radio /sys/class/sensors/grip_sensor/grip_firm_update_status
+    chown system radio /sys/class/sensors/grip_sensor/grip_irq_state
+    chown system radio /sys/class/sensors/grip_sensor/grip_irq_en_cnt
+    chown system radio /sys/class/sensors/grip_sensor/grip_reg_rw
+    chown system radio /sys/class/sensors/grip_sensor/grip_crc_check
+    chown system radio /sys/class/sensors/grip_sensor/grip_sw_reset_ready
+    chown system radio /sys/class/sensors/grip_sensor/grip_register_recover
+
+    chown system radio /sys/class/sensors/grip_sensor/grip_sar_press_threshold_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_sar_release_threshold_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_irq_count_2ch
+
+    chown system radio /sys/class/sensors/grip_sensor/grip_threshold_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_total_cap_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_baseline_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_raw_2ch
+    chown system radio /sys/class/sensors/grip_sensor/grip_check_2ch
+
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_irq_count
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_threshold
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_total_cap
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sar_enable
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sw_reset
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_earjack
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_baseline
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_raw
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_ref_cap
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_gain
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_gain_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_check
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sar_only_mode
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sar_press_threshold
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sar_release_threshold
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_firm_version_phone
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_firm_version_panel
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_firm_update
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_firm_update_status
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_irq_state
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_irq_en_cnt
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_reg_rw
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_crc_check
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sw_reset_ready
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_register_recover
+
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sar_press_threshold_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_sar_release_threshold_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_irq_count_2ch
+
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_threshold_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_total_cap_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_baseline_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_raw_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/grip_check_2ch
+    chown system radio /sys/class/sensors/grip_sensor_sub/motion
+    chown system radio /sys/class/sensors/grip_sensor_sub/unknown_state
+    chown system radio /sys/class/sensors/grip_sensor_sub/unknown_state_2ch
+        chown system radio /sys/class/sensors/grip_sensor_sub/noti_enable
 
 # Permissions for  LSI NFC
     chmod 0660 /dev/sec-nfc
@@ -706,8 +811,4 @@ service watchdogd /system/bin/watchdogd 10 20
 
 # sensorhub fw
 on post-fs
-    chmod 0770 /spu/sensorhub
-    chmod 0660 /spu/sensorhub/shub_spu.bin
-    chown root system /spu/sensorhub
-    chown root system /spu/sensorhub/shub_spu.bin
     write /sys/class/sensors/ssp_sensor/fs_ready 1
