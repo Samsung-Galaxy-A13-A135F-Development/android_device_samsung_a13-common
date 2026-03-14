@@ -238,7 +238,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 $(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
-$(call soong_config_set,samsungCameraVars,extra_ids,23,50,52,54)
+$(call soong_config_set,samsungCameraVars,extra_ids,23,50,54)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \
