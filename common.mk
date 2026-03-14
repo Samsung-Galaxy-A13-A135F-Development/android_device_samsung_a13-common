@@ -275,7 +275,12 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.samsung-multihal
+    android.hardware.sensors-service.samsung-multihal \
+    android.frameworks.sensorservice@1.0 \
+    android.hardware.sensors@1.0.vendor
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
