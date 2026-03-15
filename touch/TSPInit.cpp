@@ -56,7 +56,7 @@ void TSPInit::startScreenMonitor() {
         while (fgets(line, sizeof(line), pipe)) {
             if (strstr(line, "sec_touchscreen")) {
                 setEnabled(true);
-                usleep(250000); // sleep .25 sec
+                usleep(500000); // sleep .5 sec
             }
         }
 
