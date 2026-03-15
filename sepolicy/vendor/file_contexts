@@ -60,6 +60,9 @@
 /sys/devices/virtual/input/input[0-9]/poll_delay                                                          u:object_r:sysfs_input_writable:s0
 /sys/devices/virtual/sec/hall_ic(/.*)                                                                     u:object_r:sysfs_sec_key:s0
 
+# Touchscreen
+/(vendor|system/vendor)/bin/hw/vendor.samsung.touch.sysinput-service                                      u:object_r:hal_touchscreen_default_exec:s0
+
 # Soundtrigger
 /dev/vts_fio_dev                                                                                          u:object_r:vts_fio_device:s0
 
