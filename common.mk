@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.samsung.touch.sysinput-service
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.composer.hwc3-service.slsi \
@@ -238,7 +242,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 $(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
-$(call soong_config_set,samsungCameraVars,extra_ids,23,50,54)
+$(call soong_config_set,samsungCameraVars,extra_ids,3,4,20,23,50,52)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \

@@ -1,0 +1,23 @@
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "vendor.samsung.touch.sysinput-service",
+    init_rc: ["vendor.samsung.touch.sysinput-service.rc"],
+    relative_install_path: "hw",
+    proprietary: true,
+    srcs: [
+        "TSPInit.cpp",
+        "service.cpp"
+    ],
+    shared_libs: [
+        "libbase",
+        "liblog",
+        "libbinder_ndk",
+        "libcutils", 
+        "libutils",
+        "vendor.lineage.touch-V1-ndk",
+    ],
+}

@@ -21,7 +21,7 @@
             <interface>
                 <name>ISehBiometricsFingerprint</name>
                 <instance>default</instance>
-            </interface>
+         </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.frameworks.schedulerservice</name>
