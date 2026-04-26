@@ -75,6 +75,8 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     product \
     odm
 
+-include vendor/custom/config/BoardConfigReservedSize.mk
+
 ## Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -120,7 +122,6 @@ $(call soong_config_set_bool,lineage_health,charging_control_supports_deadline,f
 $(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
 $(call soong_config_set,lineage_health,fast_charge_value_none,1)
 $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
-
 
 ## Manifest
 # HIDL
