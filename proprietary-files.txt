@@ -206,6 +206,7 @@ vendor/lib64/libteecl.so
 vendor/lib64/libcrypto-tm.so;FIX_SONAME|8d9f1c579d9b947539919c95351a4a2c365860de|285b597b3f1adff0fe1f6c5d10d4fdd90b8e5e54
 
 # Sensors - From Samsung package version A135FXXSDEYJ1
+vendor/lib/hw/sensors.exynos850.so
 vendor/lib/libsensorlistener.so
 vendor/lib/sensors.sensorhub.so
 vendor/lib/sensors.inputvirtual.so
