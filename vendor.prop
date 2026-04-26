@@ -82,5 +82,4 @@ ro.lmk.kill_heaviest_task=true
 
 # Camera
 ro.camera.disableJpegR=true
-ro.camera.disableHeicUltraHDR=true
 ro.camera.notify_nfc=1
