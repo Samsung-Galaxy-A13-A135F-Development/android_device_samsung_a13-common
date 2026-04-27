@@ -286,7 +286,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0.vendor:32 \
     android.hardware.sensors@2.0.vendor:32 \
     android.hardware.sensors@2.1.vendor:32 \
-    android.hardware.sensors@1.0-impl.vendor:32 \
+    android.hardware.sensors@1.0-impl:32 \
     android.hardware.sensors-V2-ndk.vendor:32 \
     android.hardware.sensors@2.0-ScopedWakelock:32 \
     android.hardware.sensors@1.0-service:32
