@@ -62,6 +62,8 @@
 
 # Touchscreen
 /(vendor|system/vendor)/bin/hw/vendor.samsung.touch.sysinput-service                                      u:object_r:hal_touchscreen_default_exec:s0
+/sys/devices/virtual/sec/tsp                                                                              u:object_r:sysfs_sec_touchscreen_writable:s0
+/sys/devices/virtual/sec/tsp/cmd                                                                          u:object_r:sysfs_sec_touchscreen_writable:s0
 
 # Soundtrigger
 /dev/vts_fio_dev                                                                                          u:object_r:vts_fio_device:s0

@@ -1,3 +1,7 @@
+type hal_touchscreen_default, domain;
+type hal_touchscreen_default_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_touchscreen_default)
+
 # Touchscreen
-allow hal_touchscreen_default sysfs_sec_touchscreen:file rw_file_perms;
-allow hal_touchscreen_default sysfs_touchscreen_writable:file rw_file_perms;
+allow hal_touchscreen_default sysfs_sec_touchscreen_writable:file rw_file_perms;
