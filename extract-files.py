@@ -48,10 +48,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/libexynoscamera3.so': blob_fixup()
         .add_needed('libshim_camera.so'),
     (
-    'vendor/lib/libsensorlistener.so',
-    ) : blob_fixup()
-        .add_needed('libshim_sensorndkbridge.so'),
-    (
         'vendor/lib64/libkeymaster_helper.so',
         'vendor/lib64/libskeymaster4device.so',
     ) : blob_fixup()
