@@ -1,6 +1,6 @@
-# Common proprietary files - from Samsung package version A217FXXSCDXE2, unless pinned
+# Common proprietary files - from Samsung package version A135FXXSDEYJ1, unless pinned
 
-# Audio
+# Audio - From Samsung package version A217FXXSCDXE2
 vendor/etc/audio_board_info.xml
 vendor/etc/default_volume_tables.xml
 vendor/etc/dolby/dax-default.xml
@@ -10,7 +10,7 @@ vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/etc/floating_feature.xml
 
-# Audio Firmware - From Samsung package version A135FXXSDEYJ1
+# Audio Firmware
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/calliope_dram.bin
@@ -21,17 +21,17 @@ vendor/firmware/dax_param.bin
 vendor/firmware/dual_cal_wide_sub.bin
 vendor/firmware/SoundBoosterParam.bin
 
-# Bluetooth Firmware - From Samsung package version A135FXXSDEYJ1
+# Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
-# Camera - From Samsung package version A135FXXSDEYJ1
+# Camera
 vendor/lib/hw/camera.exynos850.so
 vendor/lib/libexynoscamera_plugin.so
 vendor/lib/libexynoscamera_plugin_utils.so
 vendor/lib/libremosaic_wrapper.so
 vendor/lib/libremosaiclib.so
 
-# Camera dependencies - From Samsung package version A135FXXSDEYJ
+# Camera dependencies
 vendor/lib/libexifa.camera.samsung.so
 vendor/lib/libhdrwrapper.so
 vendor/lib/libhwjpeg.so
@@ -51,15 +51,15 @@ vendor/lib/libsecfr_model.so
 vendor/lib/libsec2lsi_conversion.so
 vendor/lib/nfc_nci_nxpsn.so
 
-# Charger Firmware - From Samsung package version A135FXXSDEYJ1
+# Charger Firmware
 vendor/firmware/mfc_fw.bin
 
-# Codecs - From Samsung package version A135FXXSDEYJ1
+# Codecs
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
 
-# Fingerprint - From Samsung package version A135FXXSDEYJ1
+# Fingerprint
 vendor/etc/init/fingerprint_common.rc
 vendor/etc/init/init.fingerprint.rc
 vendor/lib/hw/fingerprint.default.so
@@ -71,7 +71,7 @@ vendor/lib/libqfp_sensortest.so
 vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 
-# Firmware - From Samsung package version A135FXXSDEYJ1
+# Firmware
 vendor/firmware/abox_tplg.bin
 vendor/firmware/abox_tplg.conf
 vendor/firmware/aw882xx_pid_2055a_acf.bin
@@ -92,42 +92,37 @@ vendor/firmware/tdnr_S5KJN1.json
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 
-# Gatekeeper
+# Gatekeeper - From Samsung package version A217FXXSCDXE2
 vendor/lib/hw/gatekeeper.exynos850.so
 vendor/lib64/hw/gatekeeper.exynos850.so
 
-# GPS
+# GPS - From Samsung package version A217FXXSCDXE2
 vendor/bin/hw/gps.sh
 vendor/bin/hw/gpsd
-vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
 vendor/etc/gnss/gps.cfg
 vendor/etc/init/init.gps.rc
-vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc
 vendor/lib64/hw/android.hardware.gnss@2.1-impl.so;FIX_SONAME
-vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so;FIX_SONAME
-vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
-vendor/lib64/vendor.samsung.hardware.gnss@2.1.so
 vendor/lib64/libwrappergps.so
 vendor/etc/gnss/ca.pem
 vendor/etc/gnss/deleteLogCommands
 vendor/etc/gnss/gps.debug.cfg
 
-# Graphics
+# Graphics - From Samsung package version A217FXXSCDXE2
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal3830.so
 vendor/lib/hw/vulkan.mali.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal3830.so
 vendor/lib64/hw/vulkan.mali.so
 
-# Keymaster
+# Keymaster - From Samsung package version A217FXXSCDXE2
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so
 
-# OMX Firmware - From Samsung package version A135FXXSDEYJ1
+# OMX Firmware
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/firmware/is_lib.bin
 vendor/firmware/is_rta.bin
 
-# RIL
+# RIL - From Samsung package version A217FXXSCDXE2
 vendor/bin/cass
 vendor/etc/init/cass.rc
 vendor/etc/init/init.baseband.rc
@@ -162,17 +157,17 @@ vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|9d4b2dddfe22574fabc942
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|23184bdd3a38b864a17cabcd771ee7347da31495
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|f89b327cf692da0aba6d4304592b52766b736e24
 
-# VaultKeeper
+# VaultKeeper - From Samsung package version A217FXXSCDXE2
 vendor/bin/vaultkeeperd
 vendor/etc/init/vaultkeeper_common.rc
 vendor/lib64/libstork_shared.so
 vendor/lib64/libvkservice.so
 
-# SECNATIVE
+# SECNATIVE - From Samsung package version A217FXXSCDXE2
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 
-# TEEGRIS
+# TEEGRIS - From Samsung package version A217FXXSCDXE2
 vendor/tee/00000000-0000-0000-0000-4b45594d5354
 vendor/tee/00000000-0000-0000-0000-000000534b4d
 vendor/tee/00000000-0000-0000-0000-0000534b504d
@@ -204,21 +199,21 @@ vendor/lib64/libteecl.so
 # VNDK - from prebuilts/vndk/v32 - android-15.0.0_r20
 vendor/lib64/libcrypto-tm.so;FIX_SONAME|8d9f1c579d9b947539919c95351a4a2c365860de|285b597b3f1adff0fe1f6c5d10d4fdd90b8e5e54
 
-# Sensors - From Samsung package version A135FXXSDEYJ1
+# Sensors
 vendor/lib/hw/sensors.exynos850.so
 vendor/lib/libsensorlistener.so
 vendor/lib/sensors.sensorhub.so
 vendor/lib/sensors.inputvirtual.so
 vendor/lib/sensors.grip.so
 
-# Widevine
+# Widevine - From Samsung package version A217FXXSCDXE2
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib/libwvhidl.so
 vendor/lib/liboemcrypto.so
 
-# Wi-Fi
+# Wi-Fi - From Samsung package version A217FXXSCDXE2
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_slsi.rc
 vendor/etc/wifi/hydra_config.sdb
@@ -234,7 +229,7 @@ vendor/etc/wifi/mx140_wlan_t_sw.hcf
 vendor/etc/wifi/platform.txt
 vendor/etc/wifi/slsi_reg_database.bin
 
-# Swap file
+# Swap file - From Samsung package version A217FXXSCDXE2
 vendor/etc/fstab.ramplus
 vendor/etc/init/init.ramplus.rc
 	
