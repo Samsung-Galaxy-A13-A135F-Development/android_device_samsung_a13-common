@@ -61,10 +61,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images_vendor
 
-# ConfigStore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # VIB
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
@@ -279,9 +275,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/thermal \
     hardware/samsung \
     hardware/samsung_slsi/libbt \
+    hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib \
     hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3 \
     hardware/samsung_slsi-linaro/exynos/libaudio/audiohal_comv1 \
     hardware/samsung_slsi-linaro/exynos/cpboot_v3
