@@ -92,10 +92,6 @@ vendor/firmware/tdnr_S5KJN1.json
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 
-# Gatekeeper - From Samsung package version A217FXXSCDXE2
-vendor/lib/hw/gatekeeper.exynos850.so
-vendor/lib64/hw/gatekeeper.exynos850.so
-
 # GPS - From Samsung package version A217FXXSCDXE2
 vendor/bin/hw/gps.sh
 vendor/bin/hw/gpsd
