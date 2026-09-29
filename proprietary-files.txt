@@ -66,7 +66,6 @@ vendor/lib/nfc_nci_nxpsn.so
 vendor/firmware/mfc_fw.bin
 
 # Codecs
-vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
 
