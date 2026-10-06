@@ -198,6 +198,7 @@ vendor/lib64/libcrypto.so:vendor/lib64/libcryptx.so;FIX_SONAME
 vendor/lib64/libssl.so:vendor/lib64/libssx.so;FIX_SONAME|25d0fcea69b588a9a2eedd8549f62920c92e371f|358cb9bdde9d7dae558efd7fe1a4f456dcfea405
 
 # Sensors
+vendor/firmware/sensorhub/shub_nacho_a13.bin
 vendor/lib/hw/sensors.exynos850.so
 vendor/lib/libsensorlistener.so
 vendor/lib/sensors.sensorhub.so
