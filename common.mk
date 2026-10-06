@@ -132,6 +132,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
 # Kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Keymaster
