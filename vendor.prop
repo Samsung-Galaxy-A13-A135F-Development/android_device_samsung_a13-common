@@ -72,6 +72,7 @@ ro.boot.wificountrycode=00
 ## Fingerprint
 ro.vendor.fingerprint.type=side
 ro.vendor.fingerprint.sensor_location=1080|800|350
+ro.vendor.fingerprint.supports_gestures=true
 
 # Camera
 ro.camera.disableJpegR=true
