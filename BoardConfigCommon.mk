@@ -93,6 +93,7 @@ TARGET_USES_VULKAN := true
 
 ## Kernel
 BOARD_KERNEL_IMAGE_NAME := Image
+TARGET_KERNEL_CLANG_VERSION := r563880c
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos850
 
 # Init
