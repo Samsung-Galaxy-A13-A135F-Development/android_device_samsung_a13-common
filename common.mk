@@ -258,6 +258,7 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    libsec-ril \
     secril_config_svc:32 \
     sehradiomanager:32 \
     cbd:32
