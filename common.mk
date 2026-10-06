@@ -21,7 +21,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl:32 \
     android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl:32 \
+    android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -243,7 +243,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung:32
+    android.hardware.biometrics.fingerprint-service.samsung
 
 # Power
 PRODUCT_PACKAGES += \
@@ -259,24 +259,24 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PACKAGES += \
     libsec-ril \
-    secril_config_svc:32 \
-    sehradiomanager:32 \
-    cbd:32
+    secril_config_svc \
+    sehradiomanager \
+    cbd
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.samsung-multihal:32 \
-    android.frameworks.sensorservice@1.0:32 \
-    android.hardware.sensors@1.0.vendor:32 \
-    android.hardware.sensors@2.0.vendor:32 \
-    android.hardware.sensors@2.1.vendor:32 \
-    android.hardware.sensors@1.0-impl:32 \
-    android.hardware.sensors-V2-ndk.vendor:32 \
-    android.hardware.sensors@2.0-ScopedWakelock:32 \
-    android.hardware.sensors@1.0-service:32
+    android.hardware.sensors-service.samsung-multihal \
+    android.frameworks.sensorservice@1.0 \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.0.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors-V2-ndk.vendor \
+    android.hardware.sensors@2.0-ScopedWakelock \
+    android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
