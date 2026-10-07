@@ -1,0 +1,69 @@
+cc_library_shared {
+    name: "android.hardware.sensors@1.0-a13_32",
+    defaults: ["hidl_defaults"],
+    proprietary: true,
+    relative_install_path: "hw",
+    srcs: ["Sensors.cpp"],
+    compile_multilib: "32",
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libhardware",
+        "libbase",
+        "libutils",
+        "libhidlbase",
+        "android.hardware.sensors@1.0",
+    ],
+    static_libs: [
+        "android.hardware.sensors@1.0-convert-a13_32",
+        "multihal",
+    ],
+    local_include_dirs: ["include/sensors"],
+}
+
+cc_library_static {
+    name: "android.hardware.sensors@1.0-convert-a13_32",
+    vendor_available: true,
+    defaults: ["hidl_defaults"],
+    srcs: ["convert.cpp"],
+    export_include_dirs: ["include"],
+    compile_multilib: "32",
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libhardware",
+        "libbase",
+        "libutils",
+        "libhidlbase",
+        "android.hardware.sensors@1.0",
+    ],
+    whole_static_libs: [
+        "sensors_common_convert",
+    ],
+    export_static_lib_headers: [
+        "sensors_common_convert",
+    ],
+    local_include_dirs: ["include/sensors"],
+    export_shared_lib_headers: [
+        "libhardware",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.sensors@1.0-service-a13_32",
+    relative_install_path: "hw",
+    vendor: true,
+    compile_multilib: "32",
+    init_rc: ["android.hardware.sensors@1.0-service-a13_32.rc"],
+    srcs: ["service.cpp"],
+
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libdl",
+        "libbase",
+        "libutils",
+        "libhidlbase",
+        "android.hardware.sensors@1.0",
+    ],
+}

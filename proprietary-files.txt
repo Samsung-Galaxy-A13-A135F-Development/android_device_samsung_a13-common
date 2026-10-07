@@ -140,7 +140,7 @@ vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13_prebuilt.bin
 vendor/etc/plmn_delta_zh-rCN.bin
 vendor/etc/plmn_delta_zh-rHK.bin
-vendot/etc/plmn_delta_zh-rTW.bin
+vendor/etc/plmn_delta_zh-rTW.bin
 
 # RIL - From Samsung package version A217FXXSCDXE2
 vendor/lib64/libfloatingfeature.so
