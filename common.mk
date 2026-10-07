@@ -233,7 +233,7 @@ PRODUCT_PACKAGES += \
     libprocessgroup_shim
 
 # Camera
-$(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
+$(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
 $(call soong_config_set,samsungCameraVars,extra_ids,3,4,20,23,50,52)
 
 PRODUCT_PACKAGES += \
