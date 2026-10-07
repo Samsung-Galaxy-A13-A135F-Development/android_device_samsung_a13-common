@@ -129,8 +129,6 @@ vendor/firmware/is_lib.bin
 vendor/firmware/is_rta.bin
 
 # RIL - From Samsung package version A217FXXSCDXE2
-vendor/bin/cass
-vendor/etc/init/cass.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/plmn_delta.bin
@@ -161,12 +159,6 @@ vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|e44c75cf85ac8f286cc
 vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|9d4b2dddfe22574fabc94231fc47d6a7ec99fcd1
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|23184bdd3a38b864a17cabcd771ee7347da31495
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|f89b327cf692da0aba6d4304592b52766b736e24
-
-# VaultKeeper - From Samsung package version A217FXXSCDXE2
-vendor/bin/vaultkeeperd
-vendor/etc/init/vaultkeeper_common.rc
-vendor/lib64/libstork_shared.so
-vendor/lib64/libvkservice.so
 
 # SECNATIVE - From Samsung package version A217FXXSCDXE2
 vendor/lib/libsecnativefeature.so
