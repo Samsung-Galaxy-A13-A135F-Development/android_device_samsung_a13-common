@@ -2,13 +2,24 @@
 
 # Audio - From Samsung package version A217FXXSCDXE2
 vendor/etc/audio_board_info.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/dolby/dax-default.xml
+vendor/etc/floating_feature.xml
 vendor/etc/usb_audio_policy_configuration.xml
-vendor/lib/soundfx/libswdap.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so|5f1493a281ed4bd7738da460f80990b3eaacb3c8
+vendor/lib/lib_soundaliveresampler.so|151dda05e6b3370ff5b7b4d030f2bc6828ec0caf
+vendor/lib/libSamsungPostProcessConvertor.so|dfe0683a62a020dc6db99007104f401e84912f7c
+vendor/lib64/lib_SoundAlive_SRC384_ver320.so|23957fd933227ba3bbf6d46efed454799aa9d12d
+vendor/lib64/lib_soundaliveresampler.so|2b13ea03b4959299c5233854b2c2f965a23a11e1
+vendor/lib64/libSamsungPostProcessConvertor.so|c7f5ad972b59e692e6f9053f8675d98df6546f0f
+
+# Audio (Dolby Atmos)
+vendor/etc/dolby/dax-default.xml
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
-vendor/etc/floating_feature.xml
+vendor/lib/libspatializerparamstorage.so|d9318a51218c0881ed09f1cdf7bb86f08c174ff0
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libspatializerparamstorage.so|63a51c12eac6921df4c21e1b6cdd3792d27e915a
+vendor/lib64/soundfx/libswdap.so
 
 # Audio Firmware
 vendor/firmware/AP_AUDIO_SLSI.bin
