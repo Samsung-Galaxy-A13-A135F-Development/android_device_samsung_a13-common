@@ -128,14 +128,21 @@ vendor/etc/seccomp_policy/mediacodec.policy
 vendor/firmware/is_lib.bin
 vendor/firmware/is_rta.bin
 
-# RIL - From Samsung package version A217FXXSCDXE2
+# RIL
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
+vendor/etc/plmn_delta_eng.bin
 vendor/etc/plmn_delta_hktw.bin
+vendor/etc/plmn_delta_ltn.bin
 vendor/etc/plmn_delta_usagsm.bin
-vendor/etc/plmn_se13.bin
+vendor/etc/plmn_se13_prebuilt.bin
+vendor/etc/plmn_delta_zh-rCN.bin
+vendor/etc/plmn_delta_zh-rHK.bin
+vendot/etc/plmn_delta_zh-rTW.bin
+
+# RIL - From Samsung package version A217FXXSCDXE2
 vendor/lib64/libfloatingfeature.so
 
 ## RIL - from a14 - A145FXXS8CXJ2
